@@ -8,6 +8,7 @@ import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import Home from "./Screens/Home";
 import Contact from "./Screens/Contact";
 import ContactUsPage from "./Screens/Contact";
+import About from "./Screens/About";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -32,10 +33,10 @@ function App() {
       <Routes>
         <Route path="/" element={user && userId ? <Home /> : <Landing />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes >
+        <Route path="/about" element={<About />} />
+      </Routes>
       <footer />
-
-    </div >
+      </div>
 
 
   )
