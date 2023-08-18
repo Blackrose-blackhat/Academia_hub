@@ -3,27 +3,25 @@ import Abhirup from "../assets/Abhirup.jpg";
 import Subash from "../assets/Subash.jpg";
 import Musharaf from "../assets/Musharaf.jpg";
 const About = () => {
-    return(
+    return (
         <div>
-            <div className="p-20 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-            <div class="overflow-hidden shadow-lg">
-            <img src={Musharaf} class=" rounded-full w-full"></img>
-            <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Musharaf</div>
+            <div class="flex flex-row pl-20">
+                <div class="basis-1/3 md:basis-1/3 flex flex-col m-[-18px]">
+                    <img className="rounded-full p-12" src={Musharaf}></img>
+                    <p className="text-center text-white text-xl font-bold m-[-18px]">Musharaf Parwez</p>
+                </div>
+                <div class="basis-1/3 md:basis-1/3 flex flex-col m-[-18px]">
+                    <img className="rounded-full p-12" src={Abhirup}></img>
+                    <p className="text-center text-white text-xl font-bold m-[-18px]">Abhiroop Kumar Singh</p>
+                </div>
+                <div class="basis-1/3 md:basis-1/3 flex flex-col m-[-18px]">
+                    <img className="rounded-full p-12" src={Subash}></img>
+                    <p className="text-center text-white text-xl font-bold m-[-18px]">Subash Chandra Pradhan</p>
+                </div>
             </div>
-            <img src={Subash} class="rounded-full w-full"></img>
-            <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Abhirup</div>
-            </div>
-            <img src={Abhirup} class="rounded-full w-full"></img>
-            <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Subash</div>
-            </div>
-            </div>
-            <div className="text-center">
-            <p className="text-gray-300 text-5xl font-bold align-center">About Us</p>
-            <p className="text-gray-400 max-w-3xl p-10 line-height: 1.625">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-            </div>
+            <div className="text-center justify-center my-14 ">
+                <p className="text-gray-300 text-4xl font-bold">About Us</p>
+                <p className="text-gray-100 text-sm">Lorem ipsum</p>
             </div>
         </div>
     );
