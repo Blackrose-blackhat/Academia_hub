@@ -16,6 +16,7 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         setUser(authUser);
+        localStorage.setItem("userInfo", authUser)
       }
       else {
         setUser(null);
@@ -36,7 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       <footer />
-      </div>
+    </div>
 
 
   )

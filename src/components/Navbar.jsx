@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { auth } from "../services/firebase";
 
 const Navbar = () => {
   const navItems1 = [
@@ -7,7 +8,16 @@ const Navbar = () => {
     { label: "Contact", link: "/contact" },
   ];
 
+  const navItems2 = [
+    { label: "SKill Space", link: "/skill" },
+    { label: "Acad Space", link: "/acad" }
+
+  ]
+  const userInfo = auth.currentUser;
+
+
   return (
+
     <nav className=" h-[10%] w-full flex items-center justify-between flex-row p-6">
       <a className="text-3xl tracking-tight flex items-center flex-shrink-0 text-white mr-6">
         <h1 className=" tracking-tight flex items-center flex-shrink- mr-6mb-4 text-2xl md:text-4xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
@@ -18,13 +28,23 @@ const Navbar = () => {
 
         </h1>
       </a>
-      <div className="flex flex-row justify-end align-middle w-full gap-10 md:gap-20">
-        {navItems1.map((item, idx) => (
-          <p className="text-white text-normal md:text-2xl font-semibold  " key={idx}>
-            <Link to={item.link}>{item.label}</Link>
-          </p>
-        ))}
-      </div>
+      {userInfo ? (
+        <div className="flex flex-row justify-end align-middle w-full gap-10 md:gap-20">
+          {navItems2.map((item, idx) => (
+            <p className="text-white text-normal md:text-2xl font-semibold  " key={idx}>
+              <Link to={item.link}>{item.label}</Link>
+            </p>
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-row justify-end align-middle w-full gap-10 md:gap-20">
+          {navItems1.map((item, idx) => (
+            <p className="text-white text-normal md:text-2xl font-semibold  " key={idx}>
+              <Link to={item.link}>{item.label}</Link>
+            </p>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };

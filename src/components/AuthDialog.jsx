@@ -4,7 +4,7 @@ import DialogContent from "@mui/material/DialogContent";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import GoogleButton from "react-google-button";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../services/firebase";
 import { toast } from "react-toastify";
@@ -27,7 +27,19 @@ const AuthDialog = ({ open, onClose }) => {
         console.log('ConfirmPassword', confirmPassword)
 
         if (isLogin) {
-            alert(`You are logged in as ${email}`);
+            try {
+                if (email && password) {
+                    await signInWithEmailAndPassword(auth, email, password);
+                    toast.success("Login Successfull");
+                    navigate("/");
+                }
+            } catch (error) {
+
+                if (error.code == "400") {
+
+                }
+
+            }
         }
         else {
             try {
@@ -50,6 +62,7 @@ const AuthDialog = ({ open, onClose }) => {
                 console.error(error);
             }
         }
+
         // You can implement the authentication logic using your preferred method (e.g., API calls)
     };
 
@@ -111,7 +124,7 @@ const AuthDialog = ({ open, onClose }) => {
                     </div>
 
 
-                    <p onClick={toggleAuthMode} style={{ cursor: "pointer", marginTop: "20px" }}>
+                    <p onClick={toggleAuthMode} className="cursor-pointer text-blue-600 font-bold" >
                         {isLogin
                             ? "Don't have an account? Sign Up"
                             : "Already have an account? Log In"}
