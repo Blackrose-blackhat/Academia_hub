@@ -4,9 +4,9 @@ import DialogContent from "@mui/material/DialogContent";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import GoogleButton from "react-google-button";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAdditionalUserInfo, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import { db } from "../services/firebase";
+import { db, provider } from "../services/firebase";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../services/firebase";
@@ -17,6 +17,7 @@ const AuthDialog = ({ open, onClose }) => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [isLogin, setIsLogin] = useState(true);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,11 +34,16 @@ const AuthDialog = ({ open, onClose }) => {
                     toast.success("Login Successfull");
                     navigate("/");
                 }
-            } catch (error) {
-
-                if (error.code == "400") {
-
+                else {
+                    toast.error("Please enter email and password");
                 }
+            } catch (error) {
+                if ((error.code = "400")) {
+                    toast.error(`Invalid Email or Password`);
+                    setEmail("");
+                    setPassword("");
+                }
+
 
             }
         }
@@ -58,13 +64,61 @@ const AuthDialog = ({ open, onClose }) => {
                     localStorage.setItem("users", user?.uid);
 
                 }
+                else {
+                    toast.error("All fields are mandatory!");
+                }
             } catch (error) {
-                console.error(error);
-            }
-        }
 
-        // You can implement the authentication logic using your preferred method (e.g., API calls)
+
+            }
+        }  // You can implement the authentication logic using your preferred method (e.g., API calls)
     };
+
+    const googleAuthLogin = async () => {
+        const user = await signInWithPopup(auth, provider).then((res) => {
+            const { isNewUser } = getAdditionalUserInfo(res);
+
+            if (!isNewUser) {
+                navigate("/");
+                toast.success("Login successful");
+                window.location.reload(false);
+                localStorage.setItem("users", user?.uid);
+
+            }
+            else {
+                const curr_user = auth.currentUser;
+                curr_user.delete().then(async () => {
+                    ("deleted");
+                    toast.error("Account does not exist!");
+
+                })
+
+                    .catch((e) => {
+
+                    })
+                localStorage.clear();
+            }
+        })
+    }
+
+    const googleAuthSignup = async () => {
+
+        const user = await signInWithPopup(auth, provider).then((res) => {
+            const { isNewUser } = getAdditionalUserInfo(res);
+            if (!isNewUser) {
+                auth.signOut();
+                localStorage.clear();
+                toast.error("User already registered , login to continue");
+                navigate("/");
+            }
+            else {
+                navigate("/");
+                toast.success("Account created successful");
+
+            }
+        })
+            .catch((e) => { })
+    }
 
     const toggleAuthMode = () => {
         setIsLogin(!isLogin);
@@ -120,7 +174,7 @@ const AuthDialog = ({ open, onClose }) => {
                         Or
                     </div>
                     <div className="flex flex-row w-full justify-center md:p-10">
-                        <GoogleButton />
+                        <GoogleButton onClick={isLogin ? googleAuthLogin : googleAuthSignup} />
                     </div>
 
 
