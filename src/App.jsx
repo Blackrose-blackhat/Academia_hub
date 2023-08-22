@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Landing from "./Screens/Landing";
 import Navbar from "./components/Navbar";
@@ -8,7 +8,9 @@ import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import Home from "./Screens/Home";
 import Contact from "./Screens/Contact";
 import ContactUsPage from "./Screens/Contact";
+import Skills from "./Screens/skills";
 import About from "./Screens/About";
+import Acad from "./Screens/Acad";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -35,6 +37,8 @@ function App() {
         <Route path="/" element={user && userId ? <Home /> : <Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/skill" element={user?.uid ? <Skills /> : <Navigate to="/" />} />
+        <Route path="/acad" element={user?.uid ? <Acad /> : <Navigate to="/" />} />
       </Routes>
       <footer />
     </div>

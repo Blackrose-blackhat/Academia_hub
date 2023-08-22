@@ -44,8 +44,10 @@ const Navbar = () => {
               <Link to={item.link}>{item.label}</Link>
             </p>
           ))}
+          <div className="rounded-full "></div>
         </div>
-      )}
+      )
+      }
     </nav>
   );
 };
