@@ -1,22 +1,15 @@
 import React from 'react'
-import { auth } from '../services/firebase'
-import { signOut } from 'firebase/auth'
-import { toast } from 'react-toastify'
-const Home = () => {
+import Cards from '../components/Cards';
 
-    const handlesignOut = async () => {
-        signOut(auth).then(() => {
-            localStorage.clear();
-            toast.success("User Logged out!")
-        }).catch((error) => {
-            toast.error(error);
-            console.log(error);
-        })
-    }
+
+
+const Home = ({ user }) => {
 
 
     return (
-        <button onClick={handlesignOut}>signout</button>
+        <div className='flex flex-col'>
+            <Cards user={user} />
+        </div>
     )
 }
 

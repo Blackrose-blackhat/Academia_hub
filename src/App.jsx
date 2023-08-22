@@ -31,10 +31,10 @@ function App() {
 
 
     <div className="fixed md:relative md:h-screen h-[100vh]  w-full   ">
-      <Navbar />
+      <Navbar user={user} />
       <ToastContainer position="top-left" />
       <Routes>
-        <Route path="/" element={user && userId ? <Home /> : <Landing />} />
+        <Route path="/" element={user ? <Home user={user} /> : <Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/skill" element={user?.uid ? <Skills /> : <Navigate to="/" />} />
