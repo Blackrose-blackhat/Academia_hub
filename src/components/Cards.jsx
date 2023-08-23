@@ -6,13 +6,13 @@ const Cards = ({ user }) => {
         <div className='flex flex-col p-16 mt-10 '>
             <div className='flex flex-col'>
                 <div className='flex flex-row  align-middle justify-start'>
-                    <img className='rounded-3xl h-20 w-20' src={`${user?.photoURL}`}></img>
-                    <p className=' p-5 mt-2 text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>{user?.displayName}</p>
+                    <img className='rounded-3xl h-14 w-14 md:h-20 md:w-20' src={`${user?.photoURL}`}></img>
+                    <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>{user?.displayName}</p>
 
                 </div>
                 <div className='flex flex-row align-middle justify-between w-full'>
                     <p className='text-white font-semibold mt-10 w-1/2 p-2 text-lg md:text-2xl'>Question title</p>
-                    <div className=' cursor-pointer text-center text-white rounded-xl border-primary border-4 mt-20 w-3/12 md:w-2/12  p-1 h-10'>
+                    <div className=' text-sm md:text-base cursor-pointer text-center text-white rounded-xl border-primary border-4 mt-20 w-4/12 md:w-2/12  p-1 h-10'>
                         Read More
                     </div>
                 </div>
