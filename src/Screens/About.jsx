@@ -5,9 +5,9 @@ import Musharaf from "../assets/Musharaf.jpg";
 const About = () => {
     return (
         <div className="relative">
-            <div class="flex flex-col md:flex-row p-10">
-                <div class="basis-1/3 md:basis-1/3 flex flex-col p-5 ">
-                    <img className="rounded-full p-12" src={Musharaf}></img>
+            <div className="flex flex-col md:flex-row p-10">
+                <div className=" md:basis-1/3 flex flex-col p-5 ">
+                    <img className="rounded-full p-12 " src={Musharaf}></img>
                     <p className="text-center text-white text-sm md:text-xl font-bold m-[-18px]">Musharaf Parwez</p>
                 </div>
                 <div class="basis-1/3 md:basis-1/3 flex flex-col p-5">
