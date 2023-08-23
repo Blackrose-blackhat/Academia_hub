@@ -1,5 +1,5 @@
 import React from "react";
-import contactimg from "../assets/contactimg.jpg";
+import contactnobg from "../assets/contactnobg.png";
 
 import { useForm, ValidationError } from "@formspree/react";
 function ContactForm() {
@@ -12,10 +12,11 @@ function ContactForm() {
     );
   }
   return (
-    <div>
-    <img  className="m-8 mx-8" src={contactimg}></img>
-    
-    <div className="  mx-5 lg:mx-auto  py:9 lg:py-16 px-4 justify-center  max-w-screen-md bg-purple-100 rounded-2xl  ">
+    <div className="flex flex-col justify-between h-screen md:flex ">
+    <div className="relative overflow-hidden  w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+    <img  className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto-lg shadow-lg" src={contactnobg}></img>
+    </div>
+    <div className=" mt-28 mx-5 lg:mx-auto  py:9 lg:py-16 px-4 justify-center  max-w-screen-md bg-purple-100 rounded-2xl  ">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black dark:text-purple">
         Contact Us
       </h2>
@@ -27,7 +28,7 @@ function ContactForm() {
       <form onSubmit={handleSubmit}>
         <label
           htmlFor="email"
-          className="text-black flex flex-col  text-center  "
+          className="text-black flex flex-col  text-start  "
         >
           Email Address
         </label>
@@ -37,9 +38,14 @@ function ContactForm() {
             type="email"
             name="email"
             className="g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
-            placeholder="Academia.Hub@gmail.com"
+            placeholder="Ex :- Academia.Hub@gmail.com"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <label
+          htmlFor="message"
+          className="text-black flex flex-col  text-start mb-0 md:grid-cols-1  "
+        >Message
+        </label>
           <textarea
             id="message"
             name="message"
