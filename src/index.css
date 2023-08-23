@@ -5,3 +5,9 @@
 :root {
   background-color: #171717;
 }
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+}

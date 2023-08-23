@@ -1,12 +1,19 @@
+import { Person, Person3TwoTone } from '@mui/icons-material'
 import { TextField } from '@mui/material'
-import React from 'react'
-
+import React, { useState } from 'react'
+import defaultUser from "../assets/default.png";
 const Cards = ({ user }) => {
+
+
     return (
         <div className='flex flex-col p-16 mt-10 '>
             <div className='flex flex-col'>
                 <div className='flex flex-row  align-middle justify-start'>
-                    <img className='rounded-3xl h-14 w-14 md:h-20 md:w-20' src={`${user?.photoURL}`}></img>
+                    <div className='rounded-3xl h-14 w-14 md:h-20 md:w-20'>
+                        {user?.photoURL !== null ? <img src={`${user?.photoURL}`} /> : <div className='text-white h-15  w-15  '><img src={defaultUser} /></div>}
+
+                    </div>
+
                     <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>{user?.displayName}</p>
 
                 </div>

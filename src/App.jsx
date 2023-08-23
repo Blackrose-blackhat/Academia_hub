@@ -30,7 +30,7 @@ function App() {
   return (
 
 
-    <div className="fixed md:relative md:h-screen h-[100vh]  w-full   ">
+    <div className="md:relative md:h-screen h-screen w-full   ">
       <Navbar user={user} />
       <ToastContainer position="top-left" />
       <Routes>

@@ -1,19 +1,40 @@
 import { TextField } from '@mui/material';
-import { getDownloadURL, ref, uploadBytes, uploadBytesResumable } from 'firebase/storage';
+import { getDownloadURL, getStorage, ref, uploadBytes, uploadBytesResumable } from 'firebase/storage';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
-import { storage } from '../services/firebase';
-
+import { auth, db, storage } from '../services/firebase';
+import { serverTimestamp, setDoc } from 'firebase/firestore';
+import { doc } from 'firebase/firestore';
 
 const DoubtDialog = ({ isOpen, onClose }) => {
 
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [selectedImage, setSelectedImage] = useState(null);
-    const [file, setFile] = useState(null);
+    const [active, setActive] = useState(false);
+
+    const user = auth.currentUser;
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (title && desc && selectedImage) {
+            await setDoc(doc(db, "doubts", user?.uid), {
+                title: title,
+                description: desc,
+                photoUrl: selectedImage,
+                timestamp: serverTimestamp(),
+                author: user?.displayName,
+                Userid: user?.uid
+            })
+            toast.success("Be in line,your doubt will be solved soon!");
+            setTitle("")
+            setDesc("")
+            setSelectedImage(null);
+            onClose();
+        }
 
 
-
+    }
 
 
     const handleImageChange = (event) => {
@@ -23,6 +44,28 @@ const DoubtDialog = ({ isOpen, onClose }) => {
         if (imageFile) {
             if (imageFile.size <= 1024 * 1024) { // Check if the file size is less than 1MB
                 setSelectedImage(URL.createObjectURL(imageFile));
+                const storageRef = ref(storage, `images/${imageFile.name}`);
+                const uploadTask = uploadBytesResumable(storageRef, imageFile);
+
+                uploadTask.on(
+                    'state_changed',
+                    (snapshot) => {
+                        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                        console.log('Upload is ' + progress);
+
+
+                    },
+                    (error) => {
+                        console.log(error);
+                    },
+                    () => {
+                        toast.success("Uploaded sucessfull");
+                        setActive(true);
+                        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+                            console.log('File available at ', downloadURL);
+                        })
+                    }
+                )
 
 
             } else {
@@ -31,9 +74,9 @@ const DoubtDialog = ({ isOpen, onClose }) => {
             }
         }
     };
-    useEffect(() => {
 
-    })
+
+
 
 
     if (!isOpen) {
@@ -87,9 +130,12 @@ const DoubtDialog = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className='flex flex-row gap-10 align-middle justify-between'>
-                    <button onClick={onClose} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+
+                    {title && desc && selectedImage ? (
+                        <button disabled={!active ? true : false} onClick={handleSubmit} className=' disabled:bg-blue-200  mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded'>Submit</button>
+                    ) : (<button onClick={onClose} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                         Close
-                    </button>
+                    </button>)}
 
                     {selectedImage && <button className='mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded' onClick={() => setSelectedImage(null)}>reset</button>}
                 </div>
