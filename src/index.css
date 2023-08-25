@@ -11,3 +11,13 @@ body {
   overflow-x: hidden !important;
   width: 100vw !important;
 }
+
+/* Default style for navbar */
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.42);
+  box-shadow: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}

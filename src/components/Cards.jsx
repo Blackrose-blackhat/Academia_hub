@@ -1,31 +1,77 @@
 import { Person, Person3TwoTone } from '@mui/icons-material'
 import { TextField } from '@mui/material'
+import { useEffect } from 'react';
 import React, { useState } from 'react'
 import defaultUser from "../assets/default.png";
+import { QuerySnapshot, collection, doc, getDocs, onSnapshot } from 'firebase/firestore';
+import { db } from '../services/firebase';
+import { excerpt } from '../utils';
+import { useNavigate } from 'react-router-dom';
+
+
 const Cards = ({ user }) => {
+    let navigate = useNavigate();
+
+    const [doubts, setDoubts] = useState([]);
+
+
+
+    useEffect(() => {
+
+
+
+        const unsub = onSnapshot(
+            collection(db, "doubts"),
+            (snapshot) => {
+                let lists = [];
+                snapshot.docs.forEach((doc) => {
+                    lists.push({ ...doc.data() });
+                });
+                setDoubts(lists);
+            },
+
+        );
+        return () => {
+            unsub();
+        }
+    }, [])
+
 
 
     return (
-        <div className='flex flex-col p-16 mt-10 '>
-            <div className='flex flex-col'>
-                <div className='flex flex-row  align-middle justify-start'>
-                    <div className='rounded-3xl h-14 w-14 md:h-20 md:w-20'>
-                        {user?.photoURL !== null ? <img src={`${user?.photoURL}`} /> : <div className='text-white h-15  w-15  '><img src={defaultUser} /></div>}
+        <div className='p-20 gap-20 flex flex-col'  >
+            {doubts.map((item) => (
+                <div onClick={() => navigate(`/detail/${item.id}`)} className='flex flex-col  rounded-lg  cursor-pointer duration-500 ' key={item.id} >
+                    <div className='flex flex-row  align-middle justify-start'>
+                        <div className='rounded-3xl  h-14 w-14 md:h-20 md:w-20'>
+                            <img className='rounded-full' src={item.authorPhotoURL} />
+
+                        </div>
+
+                        <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>
+                            {item.author}
+                        </p>
 
                     </div>
+                    <div className='flex flex-row align-middle justify-between w-full'>
+                        <p className='text-white font-semibold mt-10 w-1/2 p-2 text-lg md:text-2xl'>{item.title}</p>
 
-                    <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>{user?.displayName}</p>
 
-                </div>
-                <div className='flex flex-row align-middle justify-between w-full'>
-                    <p className='text-white font-semibold mt-10 w-1/2 p-2 text-lg md:text-2xl'>Question title</p>
-                    <div className=' text-sm md:text-base cursor-pointer text-center text-white rounded-xl border-primary border-4 mt-20 w-4/12 md:w-2/12  p-1 h-10'>
-                        Read More
                     </div>
-                </div>
-                <div className='mt-5 h-1 bg-primary w-full rounded-3xl' />
-            </div>
-        </div>
+                    <div className='  text-white flex flex-row justify-between align-middle w-full'>
+                        <div className=' w-full justify-start p-2 align-baseline flex flex-row'>
+                            {excerpt(item.description, 120)}
+                        </div>
+
+
+
+                    </div>
+                    <div className='mt-5 h-1 bg-primary w-full rounded-3xl' />
+                </div>))
+            }
+        </div >
+
+
     )
 }
 

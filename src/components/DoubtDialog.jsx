@@ -3,7 +3,7 @@ import { getDownloadURL, getStorage, ref, uploadBytes, uploadBytesResumable } fr
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import { auth, db, storage } from '../services/firebase';
-import { serverTimestamp, setDoc } from 'firebase/firestore';
+import { addDoc, collection, serverTimestamp, setDoc } from 'firebase/firestore';
 import { doc } from 'firebase/firestore';
 
 const DoubtDialog = ({ isOpen, onClose }) => {
@@ -13,28 +13,10 @@ const DoubtDialog = ({ isOpen, onClose }) => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [active, setActive] = useState(false);
 
+
     const user = auth.currentUser;
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (title && desc && selectedImage) {
-            await setDoc(doc(db, "doubts", user?.uid), {
-                title: title,
-                description: desc,
-                photoUrl: selectedImage,
-                timestamp: serverTimestamp(),
-                author: user?.displayName,
-                Userid: user?.uid
-            })
-            toast.success("Be in line,your doubt will be solved soon!");
-            setTitle("")
-            setDesc("")
-            setSelectedImage(null);
-            onClose();
-        }
 
-
-    }
 
 
     const handleImageChange = (event) => {
@@ -63,6 +45,7 @@ const DoubtDialog = ({ isOpen, onClose }) => {
                         setActive(true);
                         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
                             console.log('File available at ', downloadURL);
+                            setSelectedImage(downloadURL);
                         })
                     }
                 )
@@ -74,6 +57,27 @@ const DoubtDialog = ({ isOpen, onClose }) => {
             }
         }
     };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (title && desc && selectedImage) {
+            await addDoc(collection(db, "doubts"), {
+                title: title,
+                description: desc,
+                photoUrl: selectedImage,
+                timestamp: serverTimestamp(),
+                author: user?.displayName,
+                Userid: user?.uid,
+                authorPhotoURL: user?.photoURL,
+
+            })
+            toast.success("Be in line,your doubt will be solved soon!");
+            setTitle("")
+            setDesc("")
+            setSelectedImage(null);
+            onClose();
+        }
+
+    }
 
 
 

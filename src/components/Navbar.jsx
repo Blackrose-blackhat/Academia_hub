@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../services/firebase";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { signOut } from "firebase/auth";
-
+import defaultUser from "../assets/default.png";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../services/firebase";
 const Navbar = ({ user }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const [userName, setUserName] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handlesignOut = async () => {
     await signOut(auth).then(() => {
@@ -38,11 +41,13 @@ const Navbar = ({ user }) => {
   const userInfo = auth.currentUser;
 
 
+
+
   return (
 
-    <nav className="  h-[10%] w-full flex items-center justify-between flex-row pt-8 p-6">
+    <nav className={`sticky-navbar  mb-10 h-[10%] w-full flex items-center justify-between flex-row pt-8 p-6`}>
       <a className="text-3xl tracking-tight flex items-center flex-shrink-0 text-white mr-6">
-        <h1 onClick={() => navigate("/")} className=" cursor-pointer tracking-tight flex items-center flex-shrink- mr-6mb-4 text-2xl md:text-4xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
+        <h1 onClick={() => navigate("/")} className=" cursor-pointer tracking-tight flex items-center flex-shrink- mr-6mb-4 text-2xl  font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 from-purple-900 ">
             Academia{" "}
             Hub{" "}
@@ -65,7 +70,8 @@ const Navbar = ({ user }) => {
               aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
             >
-              <img className="rounded-full" src={`${user?.photoURL}`} />
+              {user?.photoURL !== null ? <img className="rounded-full" src={`${user?.photoURL}`} /> : <div className='text-white h-15  w-15  '><img src={defaultUser} /></div>}
+
             </Button>
 
           </div>
