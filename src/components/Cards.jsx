@@ -11,15 +11,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Cards = ({ user }) => {
     let navigate = useNavigate();
-
     const [doubts, setDoubts] = useState([]);
-
-
-
     useEffect(() => {
-
-
-
         const unsub = onSnapshot(
             collection(db, "doubts"),
             (snapshot) => {
@@ -45,7 +38,6 @@ const Cards = ({ user }) => {
                     <div className='flex flex-row  align-middle justify-start'>
                         <div className='rounded-3xl  h-14 w-14 md:h-20 md:w-20'>
                             <img className='rounded-full' src={item.authorPhotoURL} />
-
                         </div>
 
                         <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>
