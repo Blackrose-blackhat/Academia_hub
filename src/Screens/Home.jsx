@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Cards from '../components/Cards';
-import { Fab } from '@mui/material';
 
-import AddIcon from '@mui/icons-material/Add';
 import FloatingActionButton from '../components/FloatingActionButton';
 
 const Home = ({ user }) => {

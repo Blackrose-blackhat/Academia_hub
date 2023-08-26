@@ -11,6 +11,7 @@ import ContactUsPage from "./Screens/Contact";
 import Skills from "./Screens/skills";
 import About from "./Screens/About";
 import Acad from "./Screens/Acad";
+import Detail from "./Screens/Detail";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -34,6 +35,7 @@ function App() {
       <Navbar user={user} />
       <ToastContainer position="top-left" />
       <Routes>
+        <Route path="/detail/:id" element={<Detail />} />
         <Route path="/" element={user ? <Home user={user} /> : <Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />

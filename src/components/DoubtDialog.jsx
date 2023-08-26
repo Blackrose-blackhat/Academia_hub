@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import { auth, db, storage } from '../services/firebase';
 import { addDoc, collection, serverTimestamp, setDoc } from 'firebase/firestore';
-import { doc } from 'firebase/firestore';
+
 
 const DoubtDialog = ({ isOpen, onClose }) => {
 
@@ -15,6 +15,7 @@ const DoubtDialog = ({ isOpen, onClose }) => {
 
 
     const user = auth.currentUser;
+
 
 
 
@@ -56,10 +57,11 @@ const DoubtDialog = ({ isOpen, onClose }) => {
                 toast.error('Image size should be less than 1MB.');
             }
         }
+
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (title && desc && selectedImage) {
+        if (title && desc) {
             await addDoc(collection(db, "doubts"), {
                 title: title,
                 description: desc,
@@ -76,10 +78,18 @@ const DoubtDialog = ({ isOpen, onClose }) => {
             setSelectedImage(null);
             onClose();
         }
+        else {
+            toast.error("Please Fill in the required Fields")
+        }
 
     }
 
-
+    const handlereset = async () => {
+        setSelectedImage("");
+        setTitle("");
+        setDesc("");
+        setActive(false)
+    }
 
 
 
@@ -101,12 +111,14 @@ const DoubtDialog = ({ isOpen, onClose }) => {
                             label="Title"
                             type='text'
                             value={title}
+                            required
                             onChange={(e) => setTitle(e.target.value)}
                         />
                         <TextField
                             label="description"
                             type='text'
                             value={desc}
+                            required
                             onChange={(e) => setDesc(e.target.value)}
 
                         />
@@ -135,13 +147,28 @@ const DoubtDialog = ({ isOpen, onClose }) => {
 
                 <div className='flex flex-row gap-10 align-middle justify-between'>
 
-                    {title && desc && selectedImage ? (
-                        <button disabled={!active ? true : false} onClick={handleSubmit} className=' disabled:bg-blue-200  mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded'>Submit</button>
-                    ) : (<button onClick={onClose} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-                        Close
-                    </button>)}
+                    {title && desc && selectedImage && (
+                        <button disabled={!active ? true : false} onClick={handleSubmit} className=' disabled:bg-blue-200  mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded'>
+                            Submit
+                        </button>
+                    )
 
-                    {selectedImage && <button className='mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded' onClick={() => setSelectedImage(null)}>reset</button>}
+
+                    }
+
+                    {title && desc && !selectedImage ? (
+                        <button onClick={handleSubmit} className=' disabled:bg-blue-200  mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded'>
+                            Submit
+                        </button>
+                    ) : (
+                        <button onClick={onClose} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            Close
+                        </button>
+                    )}
+
+
+
+                    {title || desc || selectedImage ? <button className='mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded' onClick={handlereset}>reset</button> : <div></div>}
                 </div>
 
 

@@ -18,7 +18,7 @@ const Cards = ({ user }) => {
             (snapshot) => {
                 let lists = [];
                 snapshot.docs.forEach((doc) => {
-                    lists.push({ ...doc.data() });
+                    lists.push({ id: doc.id, ...doc.data() });
                 });
                 setDoubts(lists);
             },
@@ -47,8 +47,6 @@ const Cards = ({ user }) => {
                     </div>
                     <div className='flex flex-row align-middle justify-between w-full'>
                         <p className='text-white font-semibold mt-10 w-1/2 p-2 text-lg md:text-2xl'>{item.title}</p>
-
-
                     </div>
                     <div className='  text-white flex flex-row justify-between align-middle w-full'>
                         <div className=' w-full justify-start p-2 align-baseline flex flex-row'>
