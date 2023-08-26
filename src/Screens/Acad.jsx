@@ -72,12 +72,10 @@ const Acad = () => {
     return (
         <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
             {links.map(({ id, title, imglink, link }) => (
-
                 <div onClick={(e) => navigate(link)} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-between cursor-pointer">
                     <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' />
                     <div className="text-center text-white text-xl md:text-4xl  font-bold mr-4">{title}</div>
                 </div>
-
             ))}
         </div>
     )
