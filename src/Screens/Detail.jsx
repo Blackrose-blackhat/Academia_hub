@@ -147,7 +147,7 @@ const Detail = () => {
                 <h1 className='capitalize font-bold text-2xl'>{doubts.title}</h1>
                 <h3 className='p-3 text-slate-300 text-justify '>{doubts.description}</h3>
             </div>
-            <div className='p-4 w-full rounded-lg'>
+            <div className='p-4 w-full md:w-96 rounded-lg'>
                 <img src={doubts.photoUrl} />
             </div>
 
@@ -156,9 +156,9 @@ const Detail = () => {
                 <div className='rounded-lg h-1 bg-primary w-full mt-4'></div>
             </div>
 
-            <div>
+            <div className='flex flex-col w-full p-5'>
                 <div className='flex flex-row w-full'>
-                    <div className='p-20 gap-20 flex flex-col w-full'>
+                    <div className=' gap-20 flex flex-col w-full'>
                         {reply.map((item) => (
                             <div className='flex flex-col  rounded-lg  cursor-pointer duration-500 ' key={item.id} >
                                 <div className='flex flex-row  align-middle justify-start'>
