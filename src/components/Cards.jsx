@@ -1,9 +1,8 @@
-import { Person, Person3TwoTone } from '@mui/icons-material'
-import { TextField } from '@mui/material'
+
 import { useEffect } from 'react';
 import React, { useState } from 'react'
-import defaultUser from "../assets/default.png";
-import { QuerySnapshot, collection, doc, getDocs, onSnapshot } from 'firebase/firestore';
+
+import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { excerpt } from '../utils';
 import { useNavigate } from 'react-router-dom';

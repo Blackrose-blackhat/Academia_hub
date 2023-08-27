@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+
 import GoogleButton from "react-google-button";
-import { createUserWithEmailAndPassword, getAdditionalUserInfo, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore";
-import { db, provider } from "../services/firebase";
+import { getAdditionalUserInfo, signInWithPopup } from "firebase/auth";
+
+import { provider } from "../services/firebase";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../services/firebase";
@@ -17,7 +17,7 @@ const AuthDialog = ({ open, onClose }) => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [isLogin, setIsLogin] = useState(true);
-
+    const [isLoading, setisLoading] = useState(true);
 
 
 

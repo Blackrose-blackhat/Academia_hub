@@ -59,7 +59,7 @@ function App() {
         <Route path="/acad/7thSem" element={user?.uid ? <SeventhSem /> : <Navigate to="/" />} />
         <Route path="/acad/8thSem" element={user?.uid ? <EighthSem /> : <Navigate to="/" />} />
       </Routes>
-      <Footer />
+
     </div>
 
 

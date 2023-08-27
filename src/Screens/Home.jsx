@@ -4,7 +4,6 @@ import Cards from '../components/Cards';
 import FloatingActionButton from '../components/FloatingActionButton';
 
 const Home = ({ user }) => {
-    const [doubts, setDoubts] = useState([]);
 
 
     return (
