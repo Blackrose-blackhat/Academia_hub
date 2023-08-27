@@ -15,7 +15,7 @@ const Home = ({ user }) => {
                 <Cards user={user} />
                 <FloatingActionButton />
             </div>) : (<div className='flex flex-row justify-center align-middle'>
-                <h1 className='text-white text-4xl text-center mt-20'>You do not have access to this web page! please login with your cgu id</h1>
+                <h1 className='text-white text-2xl md:text-4xl text-center mt-20'>You do not have access to this web page! please login with your cgu id</h1>
             </div>)}
 
         </div>
