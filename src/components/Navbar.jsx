@@ -73,7 +73,7 @@ const Navbar = ({ user }) => {
               aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
             >
-              {user?.photoURL !== null ? <img className="rounded-full" src={`${user?.photoURL}`} /> : <div className='text-white h-15  w-15  '><img src={defaultUser} /></div>}
+              <img className="rounded-full" src={user?.photoURL} />
 
             </Button>
 

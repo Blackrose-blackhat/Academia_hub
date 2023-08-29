@@ -12,17 +12,10 @@ import Skills from "./Screens/skills";
 import About from "./Screens/About";
 import Acad from "./Screens/Acad";
 import Detail from "./Screens/Detail";
-import FirstSem from "./Screens/Acad Space/FirstSem";
-import SecondSem from "./Screens/Acad Space/SecondSem";
-import ThirdSem from "./Screens/Acad Space/ThirdSem";
-import FourthSem from "./Screens/Acad Space/FourthSem";
-import FifthSem from "./Screens/Acad Space/FifthSem";
-import SixthSem from "./Screens/Acad Space/SixthSem";
-import SeventhSem from "./Screens/Acad Space/SeventhSem";
-import EighthSem from "./Screens/Acad Space/EighthSem";
+
 import Footer from "./components/Footer";
-import Pdfview from "./Screens/Acad Space/Pdfview";
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+import { FirstSem, SeconSem } from "./Screens/Acad/index";
 function App() {
   const [user, setUser] = useState(null);
   const theme = createTheme();
@@ -53,14 +46,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/skill" element={user?.uid ? <Skills /> : <Navigate to="/" />} />
             <Route path="/acad" element={user?.uid ? <Acad /> : <Navigate to="/" />} />
-            <Route path="/acad/1stSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/2ndSem" element={user?.uid ? <SecondSem /> : <Navigate to="/" />} />
-            <Route path="/acad/3rdSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/4thSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/5thSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/6thSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/7thSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
-            <Route path="/acad/8thSem" element={user?.uid ? <Pdfview /> : <Navigate to="/" />} />
+            <Route path="/acad/1stSem" element={user?.uid ? <FirstSem /> : <Navigate to="/" />} />
+            <Route path="/acad/2ndSem" element={user?.uid ? <SeconSem /> : <Navigate to="/" />} />
+
+
           </Routes>
         </div>
         <Footer />
