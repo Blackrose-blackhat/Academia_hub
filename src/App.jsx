@@ -14,6 +14,9 @@ import Acad from "./Screens/Acad";
 import Detail from "./Screens/Detail";
 
 import Footer from "./components/Footer";
+import Pagelrn from "./Screens/SkillSpace/Pagelrn";
+import Code from "./Screens/SkillSpace/Code";
+import Compete from "./Screens/SkillSpace/Compete";
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import { Eigthsem, Fifthsem, FirstSem, Fourthsem, Secondsem, Seventhsem, Sixthsem, Thirdsem } from "./Screens/Acad/index";
 function App() {
@@ -57,7 +60,10 @@ function App() {
 
 
 
-          </Routes>
+            <Route path="/skills/Learn" element={user?.uid ? <Pagelrn /> : <Navigate to="/" />} />
+            <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
+            <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
+            </Routes>
         </div>
         <Footer />
 
