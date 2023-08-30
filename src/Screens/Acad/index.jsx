@@ -18,7 +18,7 @@ export function FirstSem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -47,7 +47,7 @@ export function Secondsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -75,7 +75,7 @@ export function Thirdsem() {
                             // navigate("/acad");
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className=" w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -104,7 +104,7 @@ export function Fourthsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -133,7 +133,7 @@ export function Fifthsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -162,7 +162,7 @@ export function Sixthsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -191,7 +191,7 @@ export function Seventhsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
@@ -220,7 +220,7 @@ export function Eigthsem() {
 
 
 
-                        }} key={id} className=" flex-col p-5 bg-gradient-to-b from-fuchsia-700 items-center inline-flex justify-between cursor-pointer">
+                        }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
                             {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
