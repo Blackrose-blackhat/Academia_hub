@@ -100,8 +100,7 @@ const Navbar = ({ user }) => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+
 
         <div className="block md:hidden">
           <MenuItem onClick={handleClose}><p onClick={() => navigate("/skill")}>Skill Space</p></MenuItem>

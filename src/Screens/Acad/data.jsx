@@ -4,7 +4,8 @@ export const firstSem = [
     {
 
         id: 1,
-        title: "Mathematics"
+        title: "Mathematics I",
+        link: ""
 
     },
     {
@@ -25,126 +26,263 @@ export const firstSem = [
     },
     {
         id: 5,
-
         title: "Python"
 
+    },
+    {
+        id: 6,
+        title: "C",
+    },
+    {
+        id: 7,
+        title: "Engineering Grpahics"
+    },
+    {
+        id: 8,
+        title: "MathematicsII",
     }
 ]
-export const firstSemComponent = [
+
+
+export const thirdSem = [
     {
 
         id: 1,
-        title: "Mathematics1"
+        title: "C++",
+        link: ""
 
     },
     {
         id: 2,
-        title: "IEE1"
+        title: "DCCN"
     },
     {
         id: 3,
 
-        title: "Physics1"
+        title: "DS"
 
     },
     {
         id: 4,
 
-        title: "IME1"
+        title: "Discrete Mathematics"
 
     },
     {
         id: 5,
+        title: "SCLD"
 
-        title: "Python1"
+    },
+    {
+        id: 6,
+        title: "LB & ES",
+    },
 
-    }
 ]
-export const secondSem = [
+export const fourthSem = [
     {
 
         id: 1,
-        url: 'https://172.29.0.1:8090/sonicui/7/login/#/confirm'
+        title: "DBE",
+        link: ""
+
     },
     {
         id: 2,
-
+        title: "COA"
     },
     {
         id: 3,
 
-
+        title: "OOPs in Java"
 
     },
     {
         id: 4,
 
-
+        title: "DAA"
 
     },
     {
         id: 5,
+        title: "LB & ES"
 
+    },
 
-
-    }
 ]
-export const secondSemComponent = [
+
+export const fifthSem = [
     {
 
         id: 1,
-        title: "Mathematics1"
+        title: "OS",
+        link: ""
 
     },
     {
         id: 2,
-        title: "IEE1"
+        title: "SEPM"
     },
     {
         id: 3,
 
-        title: "Physics1"
+        title: "CCV"
 
     },
     {
         id: 4,
 
-        title: "IME1"
+        title: "TOC"
 
     },
     {
         id: 5,
+        title: "ML"
 
-        title: "Python1"
+    },
+    {
+        id: 6,
+        title: "SE",
+    },
+    {
+        id: 7,
+        title: "AI",
+    },
+    {
+        id: 8,
+        title: "Data Mining"
+    },
+    {
+        id: 9,
+        title: "MCS"
+    },
+    {
+        id: 10,
+        title: "CNS"
+    },
+    {
+        id: 11,
+        title: "SEAM"
+    },
+    {
+        id: 12,
+        title: "DMDW"
+    },
+    {
+        id: 13,
+        title: "DWA"
+    },
 
-    }
 ]
-export const thirdSemComponent = [
+
+export const sixthSem = [
     {
 
         id: 1,
+        title: "BDA",
+        link: ""
 
     },
     {
         id: 2,
+        title: "Security Intelligence"
+    },
 
+    {
+        id: 3,
+
+        title: "AML"
+
+    },
+    {
+        id: 4,
+        title: "IWT"
+
+    },
+    {
+        id: 5,
+        title: "DV",
+    },
+    {
+        id: 6,
+        title: "MSD",
+    },
+    {
+        id: 7,
+        title: "ST"
+    },
+
+]
+
+export const seventhSem = [
+    {
+
+        id: 1,
+        title: "BC",
+        link: ""
+
+    },
+    {
+        id: 2,
+        title: "MAD"
+    },
+
+
+]
+
+export const eigthsem = [
+    {
+
+        id: 1,
+        title: "CI",
+        link: ""
+
+    },
+    {
+        id: 2,
+        title: "IOT"
     },
     {
         id: 3,
 
-
+        title: "BC"
 
     },
     {
         id: 4,
 
-
+        title: "ST"
 
     },
     {
         id: 5,
+        title: "DL"
+
+    },
+    {
+        id: 6,
+        title: "Industrial Engineering and management",
+    },
+    {
+        id: 7,
+        title: "RS",
+    },
+    {
+        id: 8,
+        title: "OB"
+    },
+
+    {
+        id: 9,
+        title: "Marketing management"
+    },
 
 
-
-    }
 ]
+
+
+
+
+
+
+

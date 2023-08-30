@@ -15,7 +15,7 @@ import Detail from "./Screens/Detail";
 
 import Footer from "./components/Footer";
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
-import { FirstSem, SeconSem } from "./Screens/Acad/index";
+import { Eigthsem, Fifthsem, FirstSem, Fourthsem, Secondsem, Seventhsem, Sixthsem, Thirdsem } from "./Screens/Acad/index";
 function App() {
   const [user, setUser] = useState(null);
   const theme = createTheme();
@@ -47,7 +47,14 @@ function App() {
             <Route path="/skill" element={user?.uid ? <Skills /> : <Navigate to="/" />} />
             <Route path="/acad" element={user?.uid ? <Acad /> : <Navigate to="/" />} />
             <Route path="/acad/1stSem" element={user?.uid ? <FirstSem /> : <Navigate to="/" />} />
-            <Route path="/acad/2ndSem" element={user?.uid ? <SeconSem /> : <Navigate to="/" />} />
+            <Route path="/acad/2ndSem" element={user?.uid ? <Secondsem /> : <Navigate to="/" />} />
+            <Route path="/acad/3rdSem" element={user?.uid ? <Thirdsem /> : <Navigate to="/" />} />
+            <Route path="/acad/4thSem" element={user?.uid ? <Fourthsem /> : <Navigate to="/" />} />
+            <Route path="/acad/5thSem" element={user?.uid ? <Fifthsem /> : <Navigate to="/" />} />
+            <Route path="/acad/6thSem" element={user?.uid ? <Sixthsem /> : <Navigate to="/" />} />
+            <Route path="/acad/7thSem" element={user?.uid ? <Seventhsem /> : <Navigate to="/" />} />
+            <Route path="/acad/8thSem" element={user?.uid ? <Eigthsem /> : <Navigate to="/" />} />
+
 
 
           </Routes>
