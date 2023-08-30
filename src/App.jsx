@@ -21,6 +21,9 @@ import SixthSem from "./Screens/Acad Space/SixthSem";
 import SeventhSem from "./Screens/Acad Space/SeventhSem";
 import EighthSem from "./Screens/Acad Space/EighthSem";
 import Footer from "./components/Footer";
+import Pagelrn from "./Screens/SkillSpace/Pagelrn";
+import Code from "./Screens/SkillSpace/Code";
+import Compete from "./Screens/SkillSpace/Compete";
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 function App() {
   const [user, setUser] = useState(null);
@@ -60,7 +63,10 @@ function App() {
             <Route path="/acad/6thSem" element={user?.uid ? <SixthSem /> : <Navigate to="/" />} />
             <Route path="/acad/7thSem" element={user?.uid ? <SeventhSem /> : <Navigate to="/" />} />
             <Route path="/acad/8thSem" element={user?.uid ? <EighthSem /> : <Navigate to="/" />} />
-          </Routes>
+            <Route path="/skills/Learn" element={user?.uid ? <Pagelrn /> : <Navigate to="/" />} />
+            <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
+            <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
+            </Routes>
         </div>
         <Footer />
 
