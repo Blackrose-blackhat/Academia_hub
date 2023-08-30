@@ -1,15 +1,17 @@
 import React from 'react';
-
-
-
-
+import geeksforgeeks from '../../assets/geeksforgeeks.jpg'
+import codechef from '../../assets/codechef.jpg'
+import codeforces from '../../assets/codeforces.jpg'
+import leetcode from '../../assets/leetcode.jpg'
+import hackerrank from '../../assets/Hackerrank.jpg'
+import hackerearth from '../../assets/hackerearth.jpg'
 const Code = () => {
   return (
     <div>
       <div class="px-10 py-20 bg-transparent grid gap-10 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img src={geekslogo} alt="" />
+            <img src={geeksforgeeks} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">GeeksforGeeks</h3>
@@ -22,7 +24,7 @@ const Code = () => {
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img src={} alt="" />
+            <img src={hackerrank} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">HackerRank</h3>
@@ -61,7 +63,7 @@ const Code = () => {
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img src={} alt="" />
+            <img src={codechef} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">Codechef</h3>
@@ -74,7 +76,7 @@ const Code = () => {
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img src={} alt="" />
+            <img src={codeforces} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">Codeforces</h3>
