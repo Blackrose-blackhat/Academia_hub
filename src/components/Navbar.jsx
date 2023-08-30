@@ -7,10 +7,8 @@ import defaultUser from "../assets/default.png";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../services/firebase";
 import { toast } from 'react-toastify';
-
 const Navbar = ({ user }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
   const [userName, setUserName] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handlesignOut = async () => {
@@ -73,7 +71,7 @@ const Navbar = ({ user }) => {
               aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
             >
-              {user?.photoURL !== null ? <img className="rounded-full" src={`${user?.photoURL}`} /> : <div className='text-white h-15  w-15  '><img src={defaultUser} /></div>}
+              <img className="rounded-full" src={user?.photoURL} />
 
             </Button>
 
@@ -100,8 +98,7 @@ const Navbar = ({ user }) => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+
 
         <div className="block md:hidden">
           <MenuItem onClick={handleClose}><p onClick={() => navigate("/skill")}>Skill Space</p></MenuItem>
