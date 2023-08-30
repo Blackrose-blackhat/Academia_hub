@@ -15,7 +15,7 @@ export function FirstSem() {
                     </div>
                     <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                        {firstSem.map(({ id, title, }) => (
+                        {firstSem.map(({ id, title,imglink }) => (
                             <div onClick={(e) => {
                                 // navigate("/acad");
                                 setSubjects(title);
@@ -24,7 +24,7 @@ export function FirstSem() {
 
 
                             }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                                {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                                <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' />
                                 <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                             </div>
 
@@ -406,7 +406,7 @@ export function Secondsem() {
                     </div>
                     <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                        {firstSem.map(({ id, title, }) => (
+                        {firstSem.map(({ id, title,imglink }) => (
                             <div onClick={(e) => {
                                 // navigate("/acad");
                                 setSubjects(title);
@@ -415,7 +415,7 @@ export function Secondsem() {
 
 
                             }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                                {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                                <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                                 <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                             </div>
 
@@ -797,14 +797,14 @@ export function Thirdsem() {
                     </div>
                     <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                        {thirdSem.map(({ id, title, }) => (
+                        {thirdSem.map(({ id, title,imglink }) => (
                             <div onClick={(e) => {
                                 // navigate("/acad");
                                 setIsSubjects(title)
 
 
                             }} key={id} className=" w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                                {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                                <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                                 <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                             </div>
 
@@ -869,14 +869,14 @@ export function Fourthsem() {
                 </div>
                 <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                    {fourthSem.map(({ id, title, }) => (
+                    {fourthSem.map(({ id, title,imglink }) => (
                         <div onClick={(e) => {
                             // navigate("/acad");
 
 
 
                         }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                            {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                            <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
 
@@ -898,14 +898,14 @@ export function Fifthsem() {
                 </div>
                 <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                    {fifthSem.map(({ id, title, }) => (
+                    {fifthSem.map(({ id, title,imglink }) => (
                         <div onClick={(e) => {
                             // navigate("/acad");
 
 
 
                         }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                            {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                            <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
 
@@ -927,7 +927,7 @@ export function Sixthsem() {
                 </div>
                 <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                    {sixthSem.map(({ id, title, }) => (
+                    {sixthSem.map(({ id, title,imglink }) => (
                         <div onClick={(e) => {
                             // navigate("/acad");
 
@@ -941,14 +941,14 @@ export function Sixthsem() {
                                         </div>
                                         <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                                            {firstSem.map(({ id, title, }) => (
+                                            {firstSem.map(({ id, title,imglink }) => (
                                                 <div onClick={(e) => {
                                                     // navigate("/acad");
 
 
 
                                                 }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                                                    {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                                                    <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                                                     <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                                                 </div>
 
@@ -960,7 +960,7 @@ export function Sixthsem() {
                                 </div>
                             )
                         }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                            {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                            <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
 
@@ -982,14 +982,14 @@ export function Seventhsem() {
                 </div>
                 <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                    {seventhSem.map(({ id, title, }) => (
+                    {seventhSem.map(({ id, title,imglink }) => (
                         <div onClick={(e) => {
                             // navigate("/acad");
 
 
 
                         }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                            {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                            <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
 
@@ -1011,14 +1011,14 @@ export function Eigthsem() {
                 </div>
                 <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
 
-                    {eigthsem.map(({ id, title, }) => (
+                    {eigthsem.map(({ id, title,imglink }) => (
                         <div onClick={(e) => {
                             // navigate("/acad");
 
 
 
                         }} key={id} className="w-[310px] md:w-[410px] h-[100px] md:h-[200px] bg-gradient-to-b from-fuchsia-700 rounded-[28px] items-center inline-flex justify-center cursor-pointer">
-                            {/* <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> */}
+                            <img className='mr-15 h-20 md:h-32 w-25 justify-start' src={imglink} alt='images' /> 
                             <div className="text-center text-white text-xl md:text-3xl  font-normal mr-4">{title}</div>
                         </div>
 
