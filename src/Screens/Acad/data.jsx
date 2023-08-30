@@ -1,47 +1,64 @@
 import subjects from "../../assets/subjects.png"
-
+import syllabus from "../../assets/syllabus.png"
 export const firstSem = [
     {
 
         id: 1,
         title: "Mathematics I",
-        link: ""
+        link: "/acad/1stSem/MathsI"
 
     },
     {
         id: 2,
-        title: "IEE"
+        title: "IEE",
+        link: "/acad/1stSem/IEE"
+
     },
     {
         id: 3,
 
-        title: "Physics"
+        title: "Physics",
+        link: "/acad/1stSem/Physics"
+
 
     },
     {
         id: 4,
 
-        title: "IME"
+        title: "IME",
+        link: "/acad/1stSem/IME"
+
 
     },
     {
         id: 5,
-        title: "Python"
+        title: "Python",
+        link: "/acad/1stSem/Python"
+
 
     },
     {
         id: 6,
         title: "C",
+        link: "/acad/1stSem/C"
+
     },
     {
         id: 7,
-        title: "Engineering Grpahics"
+        title: "Engineering Grpahics",
+        link: "/acad/1stSem/EG"
+
     },
     {
         id: 8,
         title: "MathematicsII",
+        link: "/acad/1stSem/MathematicsII"
+
     }
 ]
+
+
+
 
 
 export const thirdSem = [

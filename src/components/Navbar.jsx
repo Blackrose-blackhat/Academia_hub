@@ -7,10 +7,8 @@ import defaultUser from "../assets/default.png";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../services/firebase";
 import { toast } from 'react-toastify';
-
 const Navbar = ({ user }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
   const [userName, setUserName] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handlesignOut = async () => {
