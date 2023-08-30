@@ -216,3 +216,10 @@ export const MathematicsII = [
   },
 
 ]
+
+export const DCCN = [
+  {
+    id: 1,
+    link: ""
+  }
+]
