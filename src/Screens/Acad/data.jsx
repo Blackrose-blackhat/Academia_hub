@@ -1,5 +1,5 @@
-import subjects from "../../assets/subjects.png"
-import syllabus from "../../assets/syllabus.png"
+/*import subjects from "../../assets/subjects.png"
+import syllabus from "../../assets/syllabus.png"*/
 export const firstSem = [
     {
 
