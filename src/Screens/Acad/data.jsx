@@ -45,7 +45,7 @@ export const firstSem = [
     },
     {
         id: 7,
-        title: "Engineering Grpahics",
+        title: "EG",
         link: "/acad/1stSem/EG"
 
     },
