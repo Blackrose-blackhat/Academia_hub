@@ -921,6 +921,7 @@ export function Sixthsem() {
     let navigate = useNavigate();
     return (
         <div>
+        
             <div>
                 <div onClick={() => navigate("/acad")} className=' hover:text-blue-600 duration-100 cursor-pointer mb-10 px-10 text-primary '>
                     <ArrowBackIos />

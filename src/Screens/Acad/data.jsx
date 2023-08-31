@@ -1,34 +1,44 @@
 import Ai from '../../assets/Subjects/Ai.png'
 import Aml from '../../assets/Subjects/Aml.png'
+import Bc from '../../assets/Subjects/Bc.png'
 import Bda from '../../assets/Subjects/Bda.png'
 import Ccv from '../../assets/Subjects/Ccv.png'
+import Ci from '../../assets/Subjects/Ci.png' 
 import Clang from '../../assets/Subjects/Clang.png'
 import Cns from '../../assets/Subjects/Cns.png'
 import Coa from '../../assets/Subjects/Coa.png'
 import Cpp from '../../assets/Subjects/Cpp.png'
+import Cv from '../../assets/Subjects/Cv.png'
 import Daa from '../../assets/Subjects/Daa.png'
 import Datamining from '../../assets/Subjects/Datamining.png'
 import Dbe from '../../assets/Subjects/Dbe.png'
 import Dccn from '../../assets/Subjects/Dccn.png'
+import Dl from '../../assets/Subjects/Dl.png'
 import Dmdw from '../../assets/Subjects/Dmdw.png'
 import Ds from '../../assets/Subjects/Ds.png'
 import Dv from '../../assets/Subjects/Dv.png'
 import Dwa from '../../assets/Subjects/Dwa.png'
 import Eg from '../../assets/Subjects/Eg.png'
 import Iee from '../../assets/Subjects/Iee.png'
+import Iem from '../../assets/Subjects/Iem.png'
 import Ime from '../../assets/Subjects/Ime.png'
 import Iot from '../../assets/Subjects/Iot.png'
 import Iwt from '../../assets/Subjects/Iwt.png'
 import Lbes from '../../assets/Subjects/Lbes.png'
+import Mad from '../../assets/Subjects/Mad.png'
 import Math from '../../assets/Subjects/Math.png'
 import Maths1 from '../../assets/Subjects/Maths1.png'
 import Maths2 from '../../assets/Subjects/Maths2.png'
 import Mcs from '../../assets/Subjects/Mcs.png'
 import Ml from '../../assets/Subjects/Ml.png'
+import Mm from '../../assets/Subjects/Mm.png'
+import Msd from '../../assets/Subjects/Msd.png'
+import Ob from '../../assets/Subjects/Ob.png'
 import Oops from '../../assets/Subjects/Oops.png'
 import Os from '../../assets/Subjects/Os.png'
 import Physics from '../../assets/Subjects/Physics.png'
 import Python from '../../assets/Subjects/Python.png'
+import Rs from '../../assets/Subjects/Rs.png'
 import Scld from '../../assets/Subjects/Scld.png'
 import Se from '../../assets/Subjects/Se.png'
 import Seam from '../../assets/Subjects/Seam.png'
@@ -36,7 +46,7 @@ import Sepm from '../../assets/Subjects/Sepm.png'
 import Si from '../../assets/Subjects/Si.png'
 import St from '../../assets/Subjects/St.png'
 import Toc from '../../assets/Subjects/Toc.png'
-
+import Wc from '../../assets/Subjects/WcAdd.png'
 
 export const firstSem = [
     {
@@ -323,6 +333,7 @@ export const sixthSem = [
         id: 6,
         title: "MSD",
         link: "",
+        imglink:Msd,
     },
     {
         id: 7,
@@ -339,12 +350,20 @@ export const seventhSem = [
         id: 1,
         title: "BC",
         link: "",
+        imglink:Bc,
 
     },
     {
         id: 2,
         title: "MAD",
         link: "",
+        imglink:Mad,
+    },
+    {
+        id: 3,
+        title: "CV",
+        link: "",
+        imglink:Cv,
     },
 
 
@@ -356,6 +375,7 @@ export const eigthsem = [
         id: 1,
         title: "CI",
         link: "",
+        imglink:Ci,
 
     },
     {
@@ -369,6 +389,7 @@ export const eigthsem = [
 
         title: "BC",
         link: "",
+        imglink:Bc,
 
     },
     {
@@ -383,28 +404,39 @@ export const eigthsem = [
         id: 5,
         title: "DL",
         link:"",
+        imglink:Dl,
 
     },
     {
         id: 6,
         title: "IEM",
         link: "",
+        imglink:Iem,
     },
     {
         id: 7,
         title: "RS",
         link: "",
+        imglink:Rs,
     },
     {
         id: 8,
         title: "OB",
         link: "",
+        imglink:Ob,
     },
 
     {
         id: 9,
         title: "Marketing Management",
         link: "",
+        imglink:Mm,
+    },
+    {
+        id: 10,
+        title: "Wireless Communication",
+        link: "",
+        imglink:Wc,
     },
 
 
