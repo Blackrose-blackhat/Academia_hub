@@ -24,7 +24,7 @@ const Compete = () => {
             <p class="mt-4 text-lg font-thin">
               Join weekly contest for excitng opprtunities{" "}
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <span class="flex items-center justify-center mt-4 w-full bg-green-400 hover:bg-green-700 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
           </div>
@@ -62,7 +62,7 @@ const Compete = () => {
             <p class="mt-4 text-lg font-thin">
               Start yor Competitive Coding journey here{" "}
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <span class="flex items-center justify-center mt-4 w-full bg-blue-400 hover:bg-blue-600 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
           </div>
@@ -80,7 +80,7 @@ const Compete = () => {
               {" "}
               Sharpen your Competitive Coding Skills here{" "}
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <span class="flex items-center justify-center mt-4 w-full bg-amber-700 hover:bg-amber-900 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
           </div>
@@ -98,7 +98,7 @@ const Compete = () => {
               Did someone say Hackathon? Explore new Hackathons and participate
               in the one that amazes you!
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <span class="flex items-center justify-center mt-4 w-full bg-blue-400 hover:bg-blue-600 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
           </div>
@@ -116,7 +116,7 @@ const Compete = () => {
               If there is a hackathon you can't miss Devfolio. Check them out
               for exciting updates on competitions and hackathons
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <span class="flex items-center justify-center mt-4 w-full bg-blue-600 hover:bg-blue-700 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
           </div>

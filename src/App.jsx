@@ -63,6 +63,8 @@ function App() {
             <Route path="/skills/Learn" element={user?.uid ? <Pagelrn /> : <Navigate to="/" />} />
             <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
             <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
+
+           
             </Routes>
         </div>
         <Footer />

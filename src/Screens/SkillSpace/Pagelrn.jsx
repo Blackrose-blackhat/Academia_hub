@@ -73,7 +73,7 @@ const Pagelrn = () => {
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">
-              Data Structures & ALgorithms
+            Web Development
             </h3>
             <p class="mt-4 text-lg font-thin">
               Deep dive into the journey of Web Development{" "}
@@ -89,13 +89,13 @@ const Pagelrn = () => {
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">
-              Data Structures & ALgorithms
+              UI/UX
             </h3>
             <p class="mt-4 text-lg font-thin">
-              Deep dive into the journey of Web Development{" "}
+              Deep dive into the journey of UI and UX{" "}
             </p>
             <span class="flex items-center justify-center mt-4 w-full bg-purple-400 hover:bg-purple-800 py-1 rounded">
-              <button class="font-semibold text-gray-800">Explore</button>
+              <button class="font-semibold text-gray-800">Explore </button>
             </span>
           </div>
         </div>
