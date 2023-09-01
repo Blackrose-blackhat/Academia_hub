@@ -7,6 +7,7 @@ import hackathon1 from "../../assets/hackathon1.jpg"
 import hackathon2 from "../../assets/hackathon2.jpg"
 import { compete } from "./data";
 
+
 const Compete = () => {
   return (
     <div className="flex flex-wrap justify-center align-middle gap-10">
@@ -26,9 +27,11 @@ const Compete = () => {
             <p class="mt-4 text-lg font-thin">
               {idx.desc}
             </p>
+            <a href={idx.url} target='_blank' >
             <span class="flex items-center justify-center mt-4 w-full bg-green-400 hover:bg-green-700 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
+            </a>
           </div>
         </div>
       ))}
