@@ -25,14 +25,8 @@ const AuthDialog = ({ open, onClose }) => {
         const user = await signInWithPopup(auth, provider).then((res) => {
             const { isNewUser } = getAdditionalUserInfo(res);
 
-            if (!isNewUser) {
-                navigate("/");
-                toast.success("Login successful");
-                window.location.reload(false);
-                localStorage.setItem("users", user?.uid);
+            if (isNewUser) {
 
-            }
-            else {
                 const curr_user = auth.currentUser;
                 curr_user.delete().then(async () => {
                     ("deleted");
@@ -45,6 +39,12 @@ const AuthDialog = ({ open, onClose }) => {
                     })
                 localStorage.clear();
             }
+            else {
+                toast.success("Login successful");
+                navigate("/");
+                window.location.reload(false);
+                localStorage.setItem("users", user?.uid);
+            }
         })
     }
 
@@ -52,15 +52,16 @@ const AuthDialog = ({ open, onClose }) => {
 
         const user = await signInWithPopup(auth, provider).then((res) => {
             const { isNewUser } = getAdditionalUserInfo(res);
-            if (!isNewUser) {
-                auth.signOut();
-                localStorage.clear();
-                toast.error("User already registered , login to continue");
-                navigate("/");
-            }
-            else {
+            if (isNewUser) {
                 navigate("/");
                 toast.success("Account created successful");
+            }
+            else {
+                auth.signOut();
+                localStorage.clear();
+                auth.currentUser.delete()
+                toast.error("User already registered , login to continue");
+
 
             }
         })

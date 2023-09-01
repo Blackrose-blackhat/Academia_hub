@@ -16,7 +16,11 @@ export const variables = {
   PythonSyllabus: "",
   CSyllabus: "",
   EgSyllabus: "",
-  MathematicsII: ""
+  MathematicsII: "",
+  CCVsyllabus: "https://drive.google.com/file/d/1soDmeAQLQ-c9YR_9UgnPtgIpIwVu1f3l/preview",
+  OSSyllabus: "https://drive.google.com/file/d/1MZ63oCZyUo7RsXEVDf0A734fqGsJ5rgc/preview",
+
+
 }
 
 export const mathNotes1 = [
@@ -220,6 +224,172 @@ export const MathematicsII = [
 export const DCCN = [
   {
     id: 1,
-    link: ""
+    link: "https://drive.google.com/file/d/1ou0bL8Id43ljvtrR3uh0t2T_5Kbnb6Fg/preview",
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1ouJ-eqeHaMol_aWBz0XVogV5bu51e3L1/preview",
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1vJEPDFSCvkzrwgmTeqS_xSJ471wNdWF7/preview",
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1soJSw2q2sCGTvE9E8PnPSUubNHpNLh7Q/preview",
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1soJSw2q2sCGTvE9E8PnPSUubNHpNLh7Q/preview"
+  },
+  {
+    id: 6,
+    link: "https://drive.google.com/file/d/1sWUHPGijW6dbMUAzr0lFbG27xG1bqfdt/preview"
+  }
+]
+
+export const DS = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1TXu4bjlC82M3X-ZtO24VVR5DumPz5Cn0/preview"
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1iT8iyN1fHnxvCX0vzPygLqgi_-XKs5ud/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1oXjeAFRfV-nWmIGFeVbcFd8Cga0fGzWF/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1srSO556s7_gi_zJ_nyc99Fv7lktn7KIr/preview"
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1srgKvvJkbFaam0ldV3ocn_573RtnXp1i/preview"
+  }
+]
+
+export const DM = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1enTnE_g13Ij36ujH7BsTY9QOHxYKq662/preview"
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1eqgidtaZ2dPtPLIdVTue4YuOZnSasmd8/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1qvwvphTJrTegP2Ycz0DihrAjmM4_Ohvk/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1qvwvphTJrTegP2Ycz0DihrAjmM4_Ohvk/preview"
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1ujHJ0SXw_D1flBi2pDJDmOqJyJTm9Mzx/preview"
+  },
+  {
+    id: 6,
+    link: "https://drive.google.com/file/d/1wQqzZSCxd8btuvoAzzsgRdGmKlNH-RkQ/preview"
+  }
+
+]
+
+export const SCLD = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1ZFXM-w-C066n_C_KNl2Jh0irViJem34d/preview",
+
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1_gOwZG7WJmTHVQsBwHumzNaWJaU4Y16M/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1lkfp_9NHb2AWvw2kdLmfNwnNleyeuUjH/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1qk8DyuRIJR-fpUMIaVvcHQKdU08yoibj/preview"
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1rXLUC2bg1FYDzyuIZSL4PW8X-9xPp52g/preview"
+  }
+]
+
+export const LBES = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1ZTDlAv1ZpSsbwJlAM5ZCvXUv8MuHjNc5/preview"
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1rdFL40nl-pstPws1DmHWev8697sVAU9V/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1uAZ7m-PX5FizaDD6f-nmgqvdHaZ1DiFE/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1uQhAVMn12tR0YyJkpm9NSLQ2l7Bi91y_/preview"
+  }
+]
+
+export const OS = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1zP9EKcGqRdXXup19Mc7I9e4p2XYFMGnL/preview"
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1F_SHFmSvtAhHw1j4jhroYMA87JWueZoX/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/1OVdnP90-4NHNN2XxISgTpXmGccjaAb5P/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1KVwHTzhDB4nRzTfl-sHX4YOkWJgMdldA/preview"
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1OMrBPqdbrMr8zcn_zCGYFXneL9xSf3X6/preview"
+  }
+]
+
+export const CCV = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1psiVGQfW-mpWcKFKDWhNtn0ipcjrc_Y_/preview"
+  },
+  {
+    id: 2,
+    link: "https://drive.google.com/file/d/1tV_Sb6s9agRm3rIenNJCsGNXIqtEzF3x/preview"
+  },
+  {
+    id: 3,
+    link: "https://drive.google.com/file/d/12TI334hENg567aysSRpFi-W7UtjDP7ca/preview"
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/17UH84Dzk7LnlezJP1yVaIuZsLWbQ1MUT/preview"
+  },
+  {
+    id: 5,
+    link: "https://drive.google.com/file/d/1GXCGif74uYXGvhOiBlIJUeghrAKsLVfx/preview"
+  }
+]
+export const TOC = [
+  {
+    id: 1,
+    link: "https://drive.google.com/file/d/1MWYlkeZQeiHYh2dq9vBXHiLc0EdjZiQi/preview"
   }
 ]
