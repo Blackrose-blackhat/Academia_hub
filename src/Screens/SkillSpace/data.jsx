@@ -20,18 +20,21 @@ import hackerearth from '../../assets/hackerearth.jpg'
 export const learn = [
     {
         id: 1,
+        url: "/skills/Learn/DS",
         title: "Data Structures & Algorithms",
         imgsrc: DataStructures,
         desc: "Deep dive into the journey of Web Development "
     },
     {
         id: 2,
+        url: "/skills/Learn/App",
         title: "Android",
         imgsrc: Android,
         desc: " Deep dive into the journey of Android Development"
     },
     {
         id: 3,
+        url: "/skills/Learn/Git",
         title: "Version Control",
         imgsrc: learngit,
         desc: " Deep dive into the journey of Version Control"
@@ -39,6 +42,7 @@ export const learn = [
     },
     {
         id: 4,
+        url: "/skills/Learn/cyber-seurity",
         title: "Cybersecurity",
         imgsrc: cybersecurity,
         desc: " Deep dive into the journey of Cybersecurity"
@@ -46,6 +50,7 @@ export const learn = [
     },
     {
         id: 5,
+        url: "/skills/Learn/web-dev",
         title: "Web Development",
         imgsrc: Webdev,
         desc: " Deep dive into the journey of Web Development"
@@ -53,6 +58,7 @@ export const learn = [
     },
     {
         id: 6,
+        url: "/skills/Learn/UI_UX",
         title: "UI & UX",
         imgsrc: uiux,
         desc: " Deep dive into the journey of UI & UX"
@@ -70,6 +76,7 @@ export const compete = [
     },
     {
         id: 2,
+
         title: "GeeksforGeeks Contest",
         imgsrc: gfgcontest,
         desc: "Join weekly contest for excitng opprtunities"
@@ -111,12 +118,14 @@ export const code = [
     {
         id: 1,
         imgsrc: geeksforgeeks,
+        url: "https://www.geeksforgeeks.org/",
         desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
         title: "GeeksforGeeks"
     },
     {
         id: 2,
         imgsrc: hackerrank,
+        url: "https://www.hackerrank.com/",
         desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
         title: "HackerRank"
     },

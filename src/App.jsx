@@ -12,13 +12,14 @@ import Skills from "./Screens/skills";
 import About from "./Screens/About";
 import Acad from "./Screens/Acad";
 import Detail from "./Screens/Detail";
-
+import { UIUX } from "./Screens/SkillSpace/Learn";
 import Footer from "./components/Footer";
 import Pagelrn from "./Screens/SkillSpace/Pagelrn";
 import Code from "./Screens/SkillSpace/Code";
 import Compete from "./Screens/SkillSpace/Compete";
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import { Eigthsem, Fifthsem, FirstSem, Fourthsem, Secondsem, Seventhsem, Sixthsem, Thirdsem } from "./Screens/Acad/index";
+import { APPDEV, Cybersecurity, DS, GITHUB, WebDev } from "./Screens/SkillSpace/Learn";
 function App() {
   const [user, setUser] = useState(null);
   const theme = createTheme();
@@ -58,6 +59,13 @@ function App() {
             <Route path="/acad/7thSem" element={user?.uid ? <Seventhsem /> : <Navigate to="/" />} />
             <Route path="/acad/8thSem" element={user?.uid ? <Eigthsem /> : <Navigate to="/" />} />
             <Route path="/skills/Learn" element={user?.uid ? <Pagelrn /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/DS" element={user?.uid ? <DS /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/App" element={user?.uid ? <APPDEV /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/Git" element={user?.uid ? <GITHUB /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/cyber-seurity" element={user?.uid ? <Cybersecurity /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/web-dev" element={user?.uid ? <WebDev /> : <Navigate to="/" />} />
+            <Route path="/skills/Learn/UI_UX" element={user?.uid ? <UIUX /> : <Navigate to="/" />} />
+
             <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
             <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
 <<<<<<< HEAD

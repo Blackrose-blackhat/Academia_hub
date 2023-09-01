@@ -20,9 +20,12 @@ const Code = () => {
             <p class="mt-4 text-lg font-thin">
               {idx.desc}
             </p>
-            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
-              <button class="font-semibold text-gray-800">Explore</button>
-            </span>
+            <a href={idx.url} target='_blank' >
+
+              <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                <button class="font-semibold text-gray-800">Explore</button>
+              </span>
+            </a>
           </div>
         </div>
       ))}
