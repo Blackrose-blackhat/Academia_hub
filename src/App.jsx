@@ -57,13 +57,10 @@ function App() {
             <Route path="/acad/6thSem" element={user?.uid ? <Sixthsem /> : <Navigate to="/" />} />
             <Route path="/acad/7thSem" element={user?.uid ? <Seventhsem /> : <Navigate to="/" />} />
             <Route path="/acad/8thSem" element={user?.uid ? <Eigthsem /> : <Navigate to="/" />} />
-
-
-
             <Route path="/skills/Learn" element={user?.uid ? <Pagelrn /> : <Navigate to="/" />} />
             <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
             <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
-            </Routes>
+          </Routes>
         </div>
         <Footer />
 

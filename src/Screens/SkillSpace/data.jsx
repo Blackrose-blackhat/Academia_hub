@@ -10,6 +10,12 @@ import codeforcescomp from "../../assets/codeforcescomp.jpg"
 import codechefcomp from "../../assets/codechefcomp.jpg"
 import hackathon1 from "../../assets/hackathon1.jpg"
 import hackathon2 from "../../assets/hackathon2.jpg"
+import geeksforgeeks from '../../assets/geeksforgeeks.jpg'
+import codechef from '../../assets/codechef.jpg'
+import codeforces from '../../assets/codeforces.jpg'
+import leetcode from '../../assets/leetcode.jpg'
+import hackerrank from '../../assets/Hackerrank.jpg'
+import hackerearth from '../../assets/hackerearth.jpg'
 
 export const learn = [
     {
@@ -99,4 +105,45 @@ export const compete = [
         imgsrc: hackathon2,
         desc: "If there is a hackathon you can't miss Devfolio. Check them out for exciting updates on competitions and hackathons"
     }
+]
+
+export const code = [
+    {
+        id: 1,
+        imgsrc: geeksforgeeks,
+        desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
+        title: "GeeksforGeeks"
+    },
+    {
+        id: 2,
+        imgsrc: hackerrank,
+        desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
+        title: "HackerRank"
+    },
+    {
+        id: 3,
+        imgsrc: hackerearth,
+        desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
+        title: "HackerEarth"
+    },
+    {
+        id: 4,
+        imgsrc: leetcode,
+        desc: "Suited for those who are proficient Data Structures & Algorithms",
+        title: "Leetcode"
+    },
+    {
+        id: 5,
+        imgsrc: codechef,
+        desc: "Suited for experts to practice and brush up their skills in Data Structures & Algorithms",
+        title: "Codechef"
+    },
+    {
+        id: 6,
+        imgsrc: codeforces,
+        desc: "Suited for experts to practice and brush up their skills in Data Structures & Algorithms",
+        title: "Codeforces"
+    }
+
+
 ]
