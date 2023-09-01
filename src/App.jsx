@@ -68,13 +68,7 @@ function App() {
 
             <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
             <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
-<<<<<<< HEAD
-
-           
-            </Routes>
-=======
           </Routes>
->>>>>>> 038371240a471b573214916818d99daab060c0cc
         </div>
         <Footer />
 
