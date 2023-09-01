@@ -65,7 +65,6 @@ function App() {
             <Route path="/skills/Learn/cyber-seurity" element={user?.uid ? <Cybersecurity /> : <Navigate to="/" />} />
             <Route path="/skills/Learn/web-dev" element={user?.uid ? <WebDev /> : <Navigate to="/" />} />
             <Route path="/skills/Learn/UI_UX" element={user?.uid ? <UIUX /> : <Navigate to="/" />} />
-
             <Route path="/skills/Code" element={user?.uid ? <Code /> : <Navigate to="/" />} />
             <Route path="/skills/Compete" element={user?.uid ? <Compete /> : <Navigate to="/" />} />
           </Routes>
