@@ -49,10 +49,13 @@ const Navbar = ({ user }) => {
     <nav className={`sticky-navbar  mb-10 h-[10%] w-full flex items-center justify-between flex-row pt-8 p-6`}>
       <a className="text-3xl tracking-tight flex items-center flex-shrink-0 text-white mr-6">
         <h1 onClick={() => navigate("/")} className=" cursor-pointer tracking-tight flex items-center flex-shrink- mr-6mb-4 text-2xl  font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 from-purple-900 ">
+          <span className="text-white ">
             Academia{" "}
-            Hub{" "}
           </span>{" "}
+          &nbsp;
+          <div className="bg-[#ff9b09] rounded-md p-1 text-black">
+            HUB
+          </div>
 
         </h1>
       </a>
