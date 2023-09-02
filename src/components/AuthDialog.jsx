@@ -38,8 +38,8 @@ const AuthDialog = ({ open, onClose }) => {
             }
             else {
                 toast.success("Login successful");
-                navigate("/");
-                window.location.reload(false);
+
+
                 localStorage.setItem("users", user?.uid);
             }
         })

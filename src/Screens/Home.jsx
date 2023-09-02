@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Cards from '../components/Cards';
 import { signOut } from 'firebase/auth';
 import { auth } from '../services/firebase';
@@ -23,7 +23,7 @@ const Home = ({ user }) => {
                         </div>
 
                         <h1 className=' text-center uppercase text-xl md:text-4xl text-white font-bold'>We are sorry , You are not authorized</h1>
-                        <h3 className='text-slate-400 text-center'>This section i strictly for <span className='text-red-500'>CV Raman</span> students and can't be viewed without CGU mail id</h3>
+                        <h3 className='text-slate-400 text-center'>This section is strictly for <span className='text-red-500'>CV Raman</span> students and can't be viewed without CGU mail id</h3>
                         <div className='flex flex-row justify-center align-middle p-5 '>
                             <button onClick={async () => {
                                 await signOut(auth).then(() => {

@@ -35,7 +35,7 @@ function App() {
     });
   }, []);
 
-  const userId = user?.uid;
+
 
 
   return (
