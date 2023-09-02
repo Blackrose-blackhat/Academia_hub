@@ -13,9 +13,8 @@ const firebaseConfig = {
   storageBucket: "academia-hub.appspot.com",
   messagingSenderId: "142845490257",
   appId: "1:142845490257:web:9d0a1a0e82b3c608c0b470",
-  measurementId: "G-FW7STVES5N",
+  measurementId: "1:142845490257:web:9d0a1a0e82b3c608c0b470",
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();

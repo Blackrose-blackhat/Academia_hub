@@ -12,12 +12,9 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../services/firebase";
 const AuthDialog = ({ open, onClose }) => {
     let navigate = useNavigate();
-    const [email, setEmail] = useState("");
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
+
     const [isLogin, setIsLogin] = useState(true);
-    const [isLoading, setisLoading] = useState(true);
+
 
 
 
