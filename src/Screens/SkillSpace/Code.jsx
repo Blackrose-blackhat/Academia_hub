@@ -1,34 +1,43 @@
 import React from 'react';
+import { ArrowBackIos } from '@mui/icons-material'
+import { useNavigate } from 'react-router-dom'
+
 
 import { code } from './data';
 const Code = () => {
+  let navigate = useNavigate();
   return (
-    <div className=" p-10 flex flex-wrap justify-center align-middle gap-20">
-      {code.map((idx) => (
-        <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
-          <div>
-            <img
-              src={idx.imgsrc}
-              alt=""
-              className="h-60 w-full"
-            />
-          </div>
-          <div class="py-4 px-5 bg-white h-full">
-            <h3 class="text-lg font-semibold text-gray-600">
-              {idx.title}
-            </h3>
-            <p class="mt-4 text-lg font-thin">
-              {idx.desc}
-            </p>
-            <a href={idx.url} target='_blank' >
+    <div>
+      <div onClick={() => navigate("/skill")} className=' hover:text-blue-600 duration-100 cursor-pointer mb-10 px-10 text-primary '>
+        <ArrowBackIos />
+      </div>
+      <div className=" p-10 flex flex-wrap justify-center align-middle gap-20">
+        {code.map((idx) => (
+          <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+            <div>
+              <img
+                src={idx.imgsrc}
+                alt=""
+                className="h-60 w-full"
+              />
+            </div>
+            <div class="py-4 px-5 bg-white h-full">
+              <h3 class="text-lg font-semibold text-gray-600">
+                {idx.title}
+              </h3>
+              <p class="mt-4 text-lg font-thin">
+                {idx.desc}
+              </p>
+              <a href={idx.url} target='_blank' >
 
-              <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
-                <button class="font-semibold text-gray-800">Explore</button>
-              </span>
-            </a>
+                <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+                  <button class="font-semibold text-gray-800">Explore</button>
+                </span>
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }

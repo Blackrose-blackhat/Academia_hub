@@ -11,11 +11,17 @@ const Home = ({ user }) => {
 
     const isAllowed = user.email.endsWith('@cgu-odisha.ac.in');
     return (
-        <div className='h-screen'>
-            {isAllowed ? (<div className=' flex flex-col justify-center align-middle'>
-                <Cards user={user} />
-                <FloatingActionButton />
-            </div>) : (
+        <div >
+            {isAllowed ? (
+
+                <div className=' flex flex-col justify-center align-middle'>
+                    <Cards user={user} />
+                    <FloatingActionButton />
+
+
+                </div>
+
+            ) : (
                 <div className='flex flex-row justify-center align-middle h-screen w-full '>
                     <div className=' p-5 gap-10 flex flex-col justify-center align-middle'>
                         <div className='flex flex-row justify-center align-middle h-1/2 w-full'>

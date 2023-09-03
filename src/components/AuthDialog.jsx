@@ -77,7 +77,7 @@ const AuthDialog = ({ open, onClose }) => {
 
 
                 <div className="flex flex-row w-full justify-center md:p-10">
-                    <GoogleButton onClick={isLogin ? googleAuthLogin : googleAuthSignup} label={isLogin ? "Login With Google" : "Sign in with google"} />
+                    <GoogleButton onClick={isLogin ? googleAuthLogin : googleAuthSignup} label={isLogin ? "Login With Google" : "Sign up with google"} />
                 </div>
 
 

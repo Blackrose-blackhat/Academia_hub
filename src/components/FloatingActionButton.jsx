@@ -5,21 +5,7 @@ const FloatingActionButton = () => {
     const [showFab, setShowFab] = useState(true);
     const [isDialogOpen, setDialogOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            if (scrollY > 100) {
-                setShowFab(false);
-            } else {
-                setShowFab(true);
-            }
-        };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     const openDialog = () => {
         setDialogOpen(true);
     };
