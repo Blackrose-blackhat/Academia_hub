@@ -26,9 +26,11 @@ export const DS = () => {
             <p class="mt-4 text-lg font-thin">
               {idx.desc}
             </p>
-            <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <a href={idx.url} target='_blank' >
+            <span  class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
+            </a>
           </div>
         </div>
       ))}
@@ -55,9 +57,11 @@ export const APPDEV = () => {
             <p class="mt-4 text-lg font-thin">
               {idx.desc}
             </p>
-            <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+            <a href={idx.url} target='_blank' >
+            <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <button class="font-semibold text-gray-800">Explore</button>
             </span>
+            </a>
           </div>
         </div>
       ))}
@@ -84,9 +88,11 @@ export const GITHUB = () => {
               <p class="mt-4 text-lg font-thin">
                 {idx.desc}
               </p>
-              <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
-                <button class="font-semibold text-gray-800">Explore</button>
-              </span>
+              <a href={idx.url} target='_blank' >
+            <span  class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+              <button class="font-semibold text-gray-800">Explore</button>
+            </span>
+            </a>
             </div>
           </div>
         ))}
@@ -113,9 +119,11 @@ export const Cybersecurity = () => {
               <p class="mt-4 text-lg font-thin">
                 {idx.desc}
               </p>
-              <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
-                <button class="font-semibold text-gray-800">Explore</button>
-              </span>
+              <a href={idx.url} target='_blank' >
+            <span  class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+              <button class="font-semibold text-gray-800">Explore</button>
+            </span>
+            </a>
             </div>
           </div>
         ))}
@@ -142,9 +150,11 @@ export const WebDev = () => {
               <p class="mt-4 text-lg font-thin">
                 {idx.desc}
               </p>
-              <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
-                <button class="font-semibold text-gray-800">Explore</button>
-              </span>
+              <a href={idx.url} target='_blank' >
+            <span  class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+              <button class="font-semibold text-gray-800">Explore</button>
+            </span>
+            </a>
             </div>
           </div>
         ))}
@@ -171,9 +181,11 @@ export const UIUX= () => {
               <p class="mt-4 text-lg font-thin">
                 {idx.desc}
               </p>
-              <span onClick={() => navigate(`${idx.url}`)} class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
+              <a href={idx.url} target='_blank' >
+              <span  class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
                 <button class="font-semibold text-gray-800">Explore</button>
               </span>
+              </a>
             </div>
           </div>
         ))}
