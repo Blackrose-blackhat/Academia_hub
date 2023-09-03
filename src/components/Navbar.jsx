@@ -46,21 +46,21 @@ const Navbar = ({ user }) => {
 
   return (
 
-    <nav className={`sticky-navbar  mb-10 h-[10%] w-full flex items-center justify-between flex-row pt-8 p-6`}>
-      <a className="text-3xl tracking-tight flex items-center flex-shrink-0 text-white mr-6">
-        <h1 onClick={() => navigate("/")} className=" cursor-pointer tracking-tight flex items-center flex-shrink- mr-6mb-4 text-2xl  font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
+    <nav className={`sticky-navbar  mb-10 h-[10%] w-full flex items-center justify-between flex-row pt-8 p-4`}>
+      <a className="text-3xl tracking-tight flex items-center flex-shrink-0 text-white ">
+        <h1 onClick={() => navigate("/")} className=" cursor-pointer tracking-tight flex items-center flex-shrink- mr-6mb-4 text-xl  font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl ">
           <span className="text-white ">
             Academia{" "}
           </span>{" "}
           &nbsp;
-          <div className="bg-[#ff9b09] rounded-md p-1 text-black">
+          <div className="bg-[#ff9b09] rounded-md p-1 text-black ">
             HUB
           </div>
 
         </h1>
       </a>
       {userInfo ? (
-        <div className="  flex flex-row justify-end align-middle w-full gap-10 md:gap-20">
+        <div className="  flex flex-row justify-end align-middle w-full  md:gap-20 p-2">
           {navItems2.map((item, idx) => (
             <p className="text-white hidden md:block text-normal md:text-2xl font-semibold  " key={idx}>
               <Link to={item.link}>{item.label}</Link>
