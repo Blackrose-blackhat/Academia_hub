@@ -26,7 +26,31 @@ import fccandroid from '../../assets/Androidfcc.jpg'
 import angelaflutter from '../../assets/ANgelayuflutter.png'
 import rivanflutter from '../../assets/flutterRivaan.png'
 import fluttervox from '../../assets/voxmindflutter.png'
-import flutterfcc from '../../assets/Androidfcc.jpg'
+import flutterfcc from '../../assets/Skills/Anddev5.jpg'
+import jetpack from '../../assets/Skills/Anddev1.jpg'
+import cs1 from '../../assets/Skills/Cs1.jpg'
+import cs2 from '../../assets/Skills/Cs2.jpg'
+import cs3 from '../../assets/Skills/Cs3.jpg'
+import cs4 from '../../assets/Skills/Cs4.jpg'
+import cs5 from '../../assets/Skills/Cs5.jpg'
+import cs6 from '../../assets/Skills/Cs6.jpg'
+import web1 from '../../assets/Skills/Webdev1.jpg'
+import web2 from '../../assets/Skills/Webdev2.jpg'
+import web3 from '../../assets/Skills/Webdev3.jpg'
+import web4 from '../../assets/Skills/Webdev4.jpg'
+import web5 from '../../assets/Skills/Webdev5.jpg'
+import web6 from '../../assets/Skills/Webdev6.jpg'
+import ui1 from '../../assets/Skills/Ui1.jpg'
+import ui2 from '../../assets/Skills/Ui2.jpg'
+import ui3 from '../../assets/Skills/Ui3.jpg'
+import ui4 from '../../assets/Skills/Ui4.jpg'
+import ui5 from '../../assets/Skills/Ui5.jpg'
+import ui6 from '../../assets/Skills/Ui6.jpg'
+import git1 from '../../assets/git1.jpg'
+import git2 from '../../assets/git2.jpg'
+import git3 from '../../assets/git3.jpg'
+import git4 from '../../assets/git4.jpg'
+
 
 
 
@@ -183,28 +207,28 @@ export const code = [
 export const webdev =[
     {
         id: 1,
-        imgsrc: geeksforgeeks,
+        imgsrc: web1,
         url: "https://www.youtube.com/watch?v=Vi9bxu-M-ag&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD",
         desc: "Complete Web Development Courseon MERN stack for free on youtube",
         title: "MERN Stack by Love Babbar"
     },
     {
         id: 2,
-        imgsrc: hackerrank,
+        imgsrc: web2,
         url: "https://youtu.be/ZxKM3DCV2kE?si=eyXMCWKWR64et58k",
         desc: "Full Stack Web Development course on youtube by codedamm ",
         title: "Full Stack WebDevelopent by codedamm"
     },
     {
         id: 3,
-        imgsrc: hackerearth,
+        imgsrc: web3,
         url:"https://www.youtube.com/@javascriptmastery",
         desc: "For project based learning, One of the best resources online. Not beginner friendly requires some prerequisites  ",
         title: "JavascriptMastery "
     },
     {
         id: 4,
-        imgsrc: leetcode,
+        imgsrc: web4,
         url:"https://www.youtube.com/@WebDevSimplified",
         
         desc: "Another source from where you can learn while making projects in Web Development",
@@ -212,17 +236,17 @@ export const webdev =[
     },
     {
         id: 5,
-        imgsrc: codechef,
+        imgsrc: web5,
         url:"https://www.youtube.com/@TraversyMedia",
         desc: "Learn while you build, TraversyMedia will help you make new projects in Web Development while learning new things ",
         title: "TraversyMedia"
     },
     {
         id: 6,
-        imgsrc: codeforces,
+        imgsrc: web6,
         url:"https://www.udemy.com/course/ultimate-web/?gclid=Cj0KCQjwusunBhCYARIsAFBsUP8e3JPhA3kPKr_ugaiePZqLGr2hgvaNZjME23YY67SqbTcXQDmTnncaAmhOEALw_wcB&matchtype=b&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.INDIA_ti.8322_Exp&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_82381205698_._ad_670210021613_._kw_angela+yu+web+development_._de_c_._dm__._pl__._ti_kwd-711965347109_._li_9181372_._pd__._",
         desc: "Learn the fundamentals of Web development from 0 to hero, One of the best courses for beginners ",
-        title: "Web Development Bootcamp-By Angela Yu PAID"
+        title: "Web Development Bootcamp   -By Angela Yu [PAID]"
     }
 
 
@@ -260,7 +284,7 @@ export const appdev =[
     },
     {
         id: 5,
-        imgsrc: codechef,
+        imgsrc: jetpack,
         url:"https://www.youtube.com/watch?v=cDabx3SjuOY&list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC",
         desc: "JetPack compose is comparetively a new technology that is in its early stages of development, Do check out the free course to learn and understand the upcomming technology ",
         title: "Jetpack Compose"
@@ -270,7 +294,7 @@ export const appdev =[
         imgsrc: angelaflutter,
         url:"https://www.udemy.com/course/flutter-bootcamp-with-dart/?amp=&utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_82569850245_._ad_533220805577_._kw__._de_c_._dm__._pl__._ti_dsa-406594358574_._li_9185433_._pd__._&matchtype=&gclid=EAIaIQobChMI092f7IiMgQMVWNUWBR1srQlcEAAYASAAEgIPHvD_BwE",
         desc: "One of the best courses for flutter development online. DO check out this course for learning and understaning the fundamentals along with clearing fundamentals",
-        title: "Flutter By Angela Yu Paid"
+        title: "Flutter By Angela Yu [Paid]"
     }
 
 
@@ -310,7 +334,7 @@ export const DSAlgom =[
         imgsrc: Acpaid,
         url:"https://www.apnacollege.in/",
         desc: "Check this course out by Apna college, This covers DSA in JAVA with additional benifits like mentorship sessions and assignments",
-        title: "Apna College  Paid"
+        title: "Apna College  [Paid]"
     },
     {
         id: 6,
@@ -326,28 +350,28 @@ export const DSAlgom =[
 export const Versioncntrl =[
     {
         id: 1,
-        imgsrc: geeksforgeeks,
+        imgsrc: git1,
         url: "https://training.github.com/downloads/github-git-cheat-sheet/",
         desc: "Cheat Sheet For GIT and GITHUB",
         title: "Git CheatSheet"
     },
     {
         id: 2,
-        imgsrc: hackerrank,
+        imgsrc: git2,
         url: "https://youtu.be/uj4fy4kpaOA?si=i0BLSJpSHakU9H17",
         desc: "Complete collection of frequently used git and github commands",
         title: "GIT & GITHUB complete by Love Babbar"
     },
     {
         id: 3,
-        imgsrc: hackerearth,
+        imgsrc: git3,
         url:"https://youtu.be/apGV9Kg7ics?si=Q9Lai46dxEXX6wdP",
         desc: "Suited for begineers to practice and brush up their skills in Data Structures & Algorithms",
         title: "GIT and GITHUB Tutorial by Kunal Kushwaha"
     },
     {
         id: 4,
-        imgsrc: leetcode,
+        imgsrc: git4,
         url:"https://youtu.be/RGOj5yH7evk?si=qNPDVwEO99twuQ2T",
         
         desc: "GIT and GITHUB explained in just one video,not recommended for complete beginners",
@@ -361,42 +385,42 @@ export const Versioncntrl =[
 export const CyberSec =[
     {
         id: 1,
-        imgsrc: geeksforgeeks,
+        imgsrc: cs1,
         url: "https://www.youtube.com/@NetworkChuck",
         desc: "If you think cybersecurity is all about hacking you are wrong.The best resource online to start you journey in cybersecurity covering topics from networking to linux and many more  ",
         title: "NetworkChuck"
     },
     {
         id: 2,
-        imgsrc: hackerrank,
+        imgsrc: cs2,
         url: "https://www.youtube.com/@davidbombal/videos",
         desc: "Deep Dive into the sea of cybersecurity with David Bombal ",
         title: "David Bombal"
     },
     {
         id: 3,
-        imgsrc: hackerearth,
+        imgsrc: cs3,
         url:"https://www.coursera.org/learn/foundations-of-cybersecurity",
         desc: "Build your Computer Security and Networks expertise with this Google Certified course",
         title: "Foundations of Cybersecurity by Google"
     },
     {
         id: 4,
-        imgsrc: leetcode,
+        imgsrc: cs4,
         url:"https://skillsforall.com/",
         desc: "If you are a networking enthusiast Cisco Networking Academy is the right place for you",
         title: "Cisco skills for All "
     },
     {
         id: 5,
-        imgsrc: codechef,
+        imgsrc: cs5,
         url:"https://portswigger.net/web-security",
         desc: "Online training platform for cybersecurity enthusiasts ",
         title: "PortSwigger"
     },
     {
         id: 6,
-        imgsrc: codeforces,
+        imgsrc: cs6,
         url:"https://www.hackthebox.com/",
         desc: "HackBox is a platform for practising your cybersecurity skills, Recommmended for those who have a sound knowldege in cybersecurirty",
         title: "HackBox"
@@ -408,42 +432,42 @@ export const CyberSec =[
 export const UIndUX =[
     {
         id: 1,
-        imgsrc: geeksforgeeks,
+        imgsrc: ui1,
         url: "https://youtu.be/c9Wg6Cb_YlU?si=swT1We-Emb47xTLb",
         desc: "intrested in UI and UX check out this course by FreeCodeCamp and start your colourful journey in UI and UX ",
         title: "UI / UX Design Tutorial by FreeCodeCamp"
     },
     {
         id: 2,
-        imgsrc: hackerrank,
+        imgsrc: ui2,
         url: "https://www.youtube.com/watch?v=ddQHFKVrCkU",
         desc: "UI-UX Design Full Course for Beginners with Adobe XD and start your journey in UI/Ux",
         title: "UI-UX Design by WsCube Tech"
     },
     {
         id: 3,
-        imgsrc: hackerearth,
+        imgsrc: ui3,
         url:"https://grow.google/intl/en_in/ux-design-course/",
         desc: "This fully online program provides the skills you need for an entry-level job in UX design, with no prior experience required.",
         title: "Google UX Design Certificate"
     },
     {
         id: 4,
-        imgsrc: leetcode,
+        imgsrc: ui4,
         url:"https://www.youtube.com/watch?v=21FqZhZsi_U&list=PLlHtucAD9KT3wgeeVqILeW-0rYoQgR1Rh&ab_channel=AnshMehra",
         desc: "Learn the most effective and practical techniques to kickstart your career as a UX designer",
         title: "Learn UX at $0 by Ansh Mehra"
     },
     {
         id: 5,
-        imgsrc: codechef,
+        imgsrc: ui5,
         url:"https://www.youtube.com/@abnux",
         desc: "Learn UI and UX and design By ABNUX ",
         title: "ABNUX "
     },
     {
         id: 6,
-        imgsrc: codeforces,
+        imgsrc: ui6,
         url:"https://www.youtube.com/@KingSidharthofficial",
         desc: "You can explore UI and UX on this channel, One of the best resource for designing Enthusiasts",
         title: "UI/UX King Sidharth"
