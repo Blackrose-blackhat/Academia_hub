@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 services
+.firebaserc
+firebase.json
+node_modules
+
