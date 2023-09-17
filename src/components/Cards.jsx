@@ -14,7 +14,7 @@ const Cards = () => {
     let navigate = useNavigate();
     const [doubts, setDoubts] = useState([]);
     const [isloading, setisLoading] = useState(true);
-    useEffect(() => {
+    useEffect(async () => {
         const unsub = onSnapshot(
             collection(db, "doubts"),
             (snapshot) => {
@@ -22,11 +22,13 @@ const Cards = () => {
                 snapshot.docs.forEach((doc) => {
                     lists.push({ id: doc.id, ...doc.data() });
                 });
+
                 setDoubts(lists);
                 setisLoading(false);
             },
 
         );
+
         return () => {
             unsub();
 
@@ -37,9 +39,9 @@ const Cards = () => {
 
 
     return (
-        <div className='p-20 gap-20 flex flex-col flex-grow'  >
+        <div className='md:p-20 md:gap-20 flex flex-col flex-grow'  >
             {isloading ? (
-                <div className='flex flex-row justify-center align-middle'>
+                <div className='flex flex-row justify-center alig'>
                     <CircularProgress />
                 </div>
             ) : (
@@ -51,7 +53,7 @@ const Cards = () => {
                                     <img className='rounded-full' src={item.authorPhotoURL} />
                                 </div>
 
-                                <p className=' p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>
+                                <p className=' px-2 text-justify md:p-5 md:mt-2 text-lg md:text-2xl font-semibold capitalize text-white flex flex-row w-full align-middle '>
                                     {item.author}
                                 </p>
 
@@ -60,7 +62,7 @@ const Cards = () => {
                                 <p className='text-white font-semibold mt-10 w-1/2 p-2 text-lg md:text-2xl'>{item.title}</p>
                             </div>
                             <div className='  text-white flex flex-row justify-between align-middle w-full'>
-                                <div className=' w-full justify-start p-2 align-baseline flex flex-row'>
+                                <div className=' w-fit justify-start p-2 align-baseline flex flex-wrap'>
                                     {excerpt(item.description, 120)}
                                 </div>
 

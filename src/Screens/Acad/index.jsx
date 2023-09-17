@@ -13,7 +13,7 @@ export function FirstSem() {
                     <div onClick={() => navigate("/acad")} className=' hover:text-blue-600 duration-100 cursor-pointer mb-10 px-10 text-primary '>
                         <ArrowBackIos />
                     </div>
-                    <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
+                    <div className='flex flex-wrap flex-col relative md:flex-row p-12  mt-12 gap-20 md:gap-15 justify-center'>
 
                         {firstSem.map(({ id, title, imglink }) => (
                             <div onClick={(e) => {
@@ -36,17 +36,17 @@ export function FirstSem() {
             ) : (
                 <div>
                     {issubjects == "Mathematics I" && (
-                        <div className='flex flex-col p-5'>
+                        <div className='flex flex-col p-5  '>
                             <div onClick={() => setSubjects(null)} className=' hover:text-blue-600 duration-100 cursor-pointer mb-10 px-10 text-primary '>
                                 <ArrowBackIos />
                             </div>
-                            <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='flex flex-col gap-10 '>
+                                <div className='text-white md:px-20 px-5 md:px-10 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.mathSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 md:md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 py-5'>
@@ -58,13 +58,13 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:md:px-20 md:px-20 px-5 px-10 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 py-5'>
 
-                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nSODbbloKy0?si=HmJZ5wJxX5S7RP0b&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5xif7SUyiz4?si=O2C_ol647cAiam9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/nSODbbloKy0?si=HmJZ5wJxX5S7RP0b&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="460" height="215" src="https://www.youtube.com/embed/5xif7SUyiz4?si=O2C_ol647cAiam9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                 </div>
 
@@ -82,12 +82,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IEEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -99,7 +99,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -127,12 +127,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IEEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -144,7 +144,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -171,12 +171,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IMEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -188,7 +188,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -214,12 +214,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -231,7 +231,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -259,12 +259,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -276,7 +276,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -303,12 +303,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -320,7 +320,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -346,12 +346,12 @@ export function FirstSem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -363,7 +363,7 @@ export function FirstSem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 mt-10'>
@@ -432,12 +432,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.mathSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 py-5'>
@@ -449,7 +449,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 py-5'>
@@ -473,12 +473,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IEEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -490,7 +490,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -518,12 +518,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IEEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -535,7 +535,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -562,12 +562,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.IMEsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -579,7 +579,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -605,12 +605,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -622,7 +622,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -650,12 +650,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -667,7 +667,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -694,12 +694,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -711,7 +711,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -737,12 +737,12 @@ export function Secondsem() {
                                 <ArrowBackIos />
                             </div>
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -754,7 +754,7 @@ export function Secondsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 mt-10'>
@@ -820,12 +820,12 @@ export function Thirdsem() {
                     </div>
                     {issubjects == "DCCN" && (
                         <div className='flex flex-col gap-10'>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Syllabus</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <iframe src={variables.PythonSyllabus} allow="autoplay" />
                             </div>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Notes</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10'>
@@ -837,7 +837,7 @@ export function Thirdsem() {
                                 </div>
                             </div>
 
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Videos</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10 mt-10'>
@@ -854,12 +854,12 @@ export function Thirdsem() {
                     )}
                     {issubjects == "DS" && (
                         <div className='flex flex-col gap-10'>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Syllabus</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <iframe src={variables.PythonSyllabus} allow="autoplay" />
                             </div>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Notes</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10'>
@@ -871,7 +871,7 @@ export function Thirdsem() {
                                 </div>
                             </div>
 
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Videos</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10 mt-10'>
@@ -888,12 +888,12 @@ export function Thirdsem() {
                     )}
                     {issubjects == "Discrete Mathematics" && (
                         <div className='flex flex-col gap-10'>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Syllabus</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <iframe src={variables.PythonSyllabus} allow="autoplay" />
                             </div>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Notes</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10'>
@@ -905,7 +905,7 @@ export function Thirdsem() {
                                 </div>
                             </div>
 
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Videos</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10 mt-10'>
@@ -923,12 +923,12 @@ export function Thirdsem() {
                     )}
                     {issubjects == "SCLD" && (
                         <div className='flex flex-col gap-10'>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Syllabus</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <iframe src={variables.PythonSyllabus} allow="autoplay" />
                             </div>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Notes</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10'>
@@ -940,7 +940,7 @@ export function Thirdsem() {
                                 </div>
                             </div>
 
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Videos</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10 mt-10'>
@@ -957,12 +957,12 @@ export function Thirdsem() {
                     )}
                     {issubjects == "LB & ES" && (
                         <div className='flex flex-col gap-10'>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Syllabus</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <iframe src={variables.PythonSyllabus} allow="autoplay" />
                             </div>
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Notes</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10'>
@@ -974,7 +974,7 @@ export function Thirdsem() {
                                 </div>
                             </div>
 
-                            <div className='text-white px-20 py-2 font-mono text-2xl'>
+                            <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                 <h1>Videos</h1>
                                 <div className='bg-primary h-1 mt-2' />
                                 <div className='flex flex-wrap gap-10 mt-10'>
@@ -1055,12 +1055,12 @@ export function Fifthsem() {
                     <div>
                         {subjects == "OS" && (
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.PythonSyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -1072,7 +1072,7 @@ export function Fifthsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 mt-10'>
@@ -1090,12 +1090,12 @@ export function Fifthsem() {
                         )}
                         {subjects == "CCV" && (
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.CCVsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -1107,7 +1107,7 @@ export function Fifthsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 mt-10'>
@@ -1124,12 +1124,12 @@ export function Fifthsem() {
                         )}
                         {subjects == "TOC" && (
                             <div className='flex flex-col gap-10'>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Syllabus</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <iframe src={variables.CCVsyllabus} allow="autoplay" />
                                 </div>
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Notes</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10'>
@@ -1141,7 +1141,7 @@ export function Fifthsem() {
                                     </div>
                                 </div>
 
-                                <div className='text-white px-20 py-2 font-mono text-2xl'>
+                                <div className='text-white md:px-20 px-5 py-2 font-mono text-2xl'>
                                     <h1>Videos</h1>
                                     <div className='bg-primary h-1 mt-2' />
                                     <div className='flex flex-wrap gap-10 mt-10'>

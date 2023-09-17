@@ -10,6 +10,7 @@ import { getDownloadURL, uploadBytesResumable } from 'firebase/storage';
 import { toast } from 'react-toastify';
 import { CircleLoader } from 'react-spinners';
 const Detail = () => {
+
     let navigate = useNavigate();
     const { id } = useParams();
     const [doubts, setDoubts] = useState([]);
@@ -88,14 +89,19 @@ const Detail = () => {
             querySnapshot.forEach((doc) => {
 
                 lists.push({ id: doc.id, ...doc.data() });
+
+
             })
             setReply(lists)
             setisLoading(false);
 
         }
+        return () => {
+            getDoubtdata();
+            unsub();
+        }
 
-        getDoubtdata();
-        unsub();
+
 
     }, [id]);
 

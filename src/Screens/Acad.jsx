@@ -77,7 +77,7 @@ const Acad = () => {
             <div onClick={() => navigate("/")} className=' hover:text-blue-600 duration-100 cursor-pointer mb-10 px-10 text-primary '>
                 <ArrowBackIos />
             </div>
-            <div className='flex flex-wrap flex-col relative md:flex-row p-22 ml-20 mt-12 gap-20 md:gap-15 justify-center'>
+            <div className='flex flex-wrap flex-col  md:flex-row p-12 mt-12 gap-20 md:gap-15 justify-center'>
 
                 {links.map(({ id, title, imglink, link }) => (
                     <div onClick={(e) => {

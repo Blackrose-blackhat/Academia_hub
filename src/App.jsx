@@ -41,7 +41,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      <div className="md:relative md:h-screen h-screen w-full overflow-hidden    ">
+      <div className="md:relative md:h-screen h-screen w-full     ">
         <div style={{ minHeight: '100vh', paddingBottom: '4rem' }}>
           <Navbar user={user} />
           <ToastContainer position="top-left" />
