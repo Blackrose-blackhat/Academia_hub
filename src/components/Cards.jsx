@@ -14,26 +14,23 @@ const Cards = () => {
     let navigate = useNavigate();
     const [doubts, setDoubts] = useState([]);
     const [isloading, setisLoading] = useState(true);
-    useEffect(async () => {
-        const unsub = onSnapshot(
-            collection(db, "doubts"),
-            (snapshot) => {
-                let lists = [];
-                snapshot.docs.forEach((doc) => {
-                    lists.push({ id: doc.id, ...doc.data() });
-                });
+    const unsub = onSnapshot (
+        collection(db, "doubts"),
+        (snapshot) => {
+            let lists = [];
+            snapshot.docs.forEach((doc) => {
+                lists.push({ id: doc.id, ...doc.data() });
+            });
 
-                setDoubts(lists);
-                setisLoading(false);
-            },
+            setDoubts(lists);
+            setisLoading(false);
+        },
 
-        );
+    );
+    useEffect( () => {
 
-        return () => {
             unsub();
 
-
-        }
     }, [])
 
 
